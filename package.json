@@ -1,0 +1,20 @@
+{
+  "name": "pokemon-cli-game",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">\r Pokemon-cli-game\r <br> <br>\r <p>\r <img src=\"./static/pokeball.svg\" width=\"100\">\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tech-Phantoms/pokemon-cli-game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tech-Phantoms/pokemon-cli-game/issues"
+  },
+  "homepage": "https://github.com/Tech-Phantoms/pokemon-cli-game#readme"
+}
