@@ -12,6 +12,8 @@ Pokemon-cli-game
 <img src="https://img.shields.io/badge/PRs-open-green">
 </a>
 <a href="https://deepscan.io/dashboard#view=project&tid=8580&pid=16758&bid=365082"><img src="https://deepscan.io/api/teams/8580/projects/16758/branches/365082/badge/grade.svg" alt="DeepScan grade"></a>
+
+[![Node.js CI](https://github.com/Tech-Phantoms/pokemon-cli-game/actions/workflows/node.js.yml/badge.svg)](https://github.com/Tech-Phantoms/pokemon-cli-game/actions/workflows/node.js.yml)
 </p>
 </h1>
 
