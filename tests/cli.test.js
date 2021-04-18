@@ -6,6 +6,7 @@ describe('Running the CLI commands', () => {
     it('checking help', () => {
         const Test = () => <Text>Hello World</Text>
         const { lastFrame } = render(<Test />);
-        lastFrame === "Hello World"
+        console.log(lastFrame)
+        expect(lastFrame()).toMatch(/Hello World/)
     })
 })
