@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-'use strict';
 const React = require('react');
 const importJsx = require('import-jsx');
-const {render} = require('ink');
+const { render } = require('ink');
 const meow = require('meow');
+const { viewFileFinder } = require('./util')
 
-const ui = importJsx('./ui');
+const ui = importJsx(viewFileFinder("ui.js"));
 
 const cli = meow(`
 	Usage
