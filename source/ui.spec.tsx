@@ -5,7 +5,7 @@ import App from './ui';
 
 describe("App should", () => {
     test("Check initial App", () => {
-        const {lastFrame} = render(<App input={["name"]} flags={{h: true}} />);
-        expect(lastFrame()).toMatch(/name/);
+        const {lastFrame} = render(<App  />);
+        expect(lastFrame()).toMatch(/Hello/);
     })
 })
