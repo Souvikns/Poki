@@ -18,12 +18,12 @@ Poki
 <a href="https://codecov.io/gh/Tech-Phantoms/Poki">
 <img src="https://codecov.io/gh/Tech-Phantoms/Poki/branch/main/graph/badge.svg?token=FYklvhHRMn"/>
 </a>
-    
+
 </p>
 </h1>
 
-
 > Work in progress
 
-## Introduction 
-A fun multiplayer turn based Pokémon cli game. 
+## Introduction
+
+A fun multiplayer turn based Pokémon cli game.
