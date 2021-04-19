@@ -22,7 +22,6 @@
 		"ink": "^3.0.8",
 		"ink-big-text": "^1.2.0",
 		"ink-gradient": "^2.0.0",
-		"ink-image": "^2.0.0",
 		"meow": "^9.0.0",
 		"react": "^17.0.1",
 		"reflect-metadata": "^0.1.13",

@@ -4,6 +4,7 @@ import { Command } from 'commander';
 import { render } from 'ink';
 import Gradient from 'ink-gradient';
 import BigText from 'ink-big-text';
+import Err from './components/error';
 const program = new Command();
 
 if (process.argv.includes('-h') || process.argv.includes('--help')) {
@@ -66,5 +67,10 @@ program
 
     })
 
+
+program.on('command:*', (command) => {
+    render(<Err command={command}/>)
+    program.help();
+})
 
 program.parse(process.argv);

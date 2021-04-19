@@ -1,6 +1,6 @@
 import React from 'react';
 import {render} from 'ink-testing-library';
-import App from './ui';
+import App from '../ui';
 
 
 describe("App should", () => {
