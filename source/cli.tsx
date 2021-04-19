@@ -5,7 +5,7 @@ const program = new Command();
 
 program
     .name("poki")
-    .version("0.0.1")x
+    .version("0.0.1")
     .addHelpCommand(false);
 
 
