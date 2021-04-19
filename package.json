@@ -10,7 +10,8 @@
 	},
 	"scripts": {
 		"test": "jest --ci --coverage && codecov",
-		"lint": "eslint --max-warnings 0 --config \".eslintrc.json\" \".\" "
+		"lint": "eslint --max-warnings 0 --config \".eslintrc.json\" \".\" ",
+		"test:watch": "jest --watch"
 	},
 	"files": [
 		"cli.js",

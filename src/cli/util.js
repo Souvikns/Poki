@@ -1,4 +1,13 @@
 const path = require("path");
 
-exports.viewFileFinder = (fileName) =>
+/**
+ * 
+ * @param {string} fileName 
+ * @returns string
+ */
+const viewFileFinder = (fileName) =>
 	path.resolve(__dirname, "views", fileName);
+
+module.exports = {
+	viewFileFinder,
+}

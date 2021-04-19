@@ -6,6 +6,7 @@ const meow = require("meow");
 const meowHelp = require("cli-meow-help");
 const { viewFileFinder } = require("./util");
 const pkg = require("../../package.json");
+const {helpCommandGenerator} = require('./commands')
 
 const ui = importJsx(viewFileFinder("ui.js"));
 
@@ -27,5 +28,9 @@ const cli = meow(
 	}),
 	{ version: pkg.version }
 );
+
+if(cli.flags.h || cli.flags.help){
+	console.log(helpCommandGenerator(cli.input[0]));
+}
 
 render(React.createElement(ui, cli.flags));
