@@ -1,66 +1,56 @@
 {
-	"name": "poki",
+	"name": "pokemon-cli-game",
 	"version": "0.0.0",
 	"license": "MIT",
-	"bin": {
-		"poki": "./src/cli/cli.js"
-	},
+	"bin": "dist/cli.js",
 	"engines": {
 		"node": ">=10"
 	},
 	"scripts": {
-		"test": "jest --ci --coverage && codecov",
-		"lint": "eslint --max-warnings 0 --config \".eslintrc.json\" \".\" ",
-		"test:watch": "jest --watch"
+		"build": "tsc",
+		"start": "npm run build && node dist/cli.js",
+		"pretest": "npm run build",
+		"test": "xo && ava"
 	},
 	"files": [
-		"cli.js",
-		"ui.js"
+		"dist/cli.js"
 	],
-	"jest": {
-		"coverageDirectory": "./coverage/",
-		"collectCoverage": true
-	},
 	"dependencies": {
-		"cli-meow-help": "^2.0.2",
-		"import-jsx": "^4.0.0",
+		"@asyncapi/parser": "^1.4.5",
+		"commander": "^7.1.0",
 		"ink": "^3.0.8",
 		"meow": "^9.0.0",
-		"prop-types": "^15.7.2",
-		"react": "^17.0.2"
+		"react": "^17.0.1",
+		"reflect-metadata": "^0.1.13",
+		"tsyringe": "^4.5.0"
 	},
 	"devDependencies": {
-		"@ava/babel": "^1.0.1",
-		"@babel/preset-env": "^7.13.15",
-		"@babel/preset-react": "^7.13.13",
-		"@babel/register": "^7.13.14",
-		"ava": "^3.15.0",
+		"@sindresorhus/tsconfig": "^0.9.0",
+		"@types/jest": "^26.0.20",
+		"@types/react": "^17.0.2",
 		"chalk": "^4.1.0",
-		"codecov": "^3.8.1",
-		"eslint": "^7.24.0",
-		"eslint-config-xo-react": "^0.25.0",
-		"eslint-plugin-react": "^7.23.2",
+		"eslint-plugin-react": "^7.22.0",
 		"eslint-plugin-react-hooks": "^4.2.0",
 		"ink-testing-library": "^2.1.0",
 		"jest": "^26.6.3",
-		"xo": "^0.38.2"
+		"ts-jest": "^26.5.3",
+		"typescript": "^4.2.3"
 	},
-	"ava": {
-		"babel": true,
-		"require": [
-			"@babel/register"
+	"jest": {
+		"setupFilesAfterEnv": [
+			"<rootDir>/test/setupTests.ts"
+		],
+		"transform": {
+			"^.+\\.tsx?$": "ts-jest"
+		},
+		"testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(tsx?)$",
+		"moduleFileExtensions": [
+			"ts",
+			"tsx",
+			"js",
+			"jsx",
+			"json",
+			"node"
 		]
-	},
-	"babel": {
-		"presets": [
-			"@babel/preset-env",
-			"@babel/preset-react"
-		]
-	},
-	"xo": {
-		"extends": "xo-react",
-		"rules": {
-			"react/prop-types": "off"
-		}
 	}
 }
