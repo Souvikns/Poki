@@ -22,8 +22,8 @@ Poki
 </p>
 </h1>
 
-
 > Work in progress
 
-## Introduction 
-A fun multiplayer turn based Pokémon cli game. 
+## Introduction
+
+A fun multiplayer turn based Pokémon cli game.
