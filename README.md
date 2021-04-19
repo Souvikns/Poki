@@ -15,11 +15,15 @@ Poki
 <a href="https://github.com/Tech-Phantoms/pokemon-cli-game/actions/workflows/node.js.yml">
 <img src="https://github.com/Tech-Phantoms/pokemon-cli-game/actions/workflows/node.js.yml/badge.svg" alt="Node.js CI">
 </a>
+<a href="https://codecov.io/gh/Tech-Phantoms/Poki">
+<img src="https://codecov.io/gh/Tech-Phantoms/Poki/branch/main/graph/badge.svg?token=FYklvhHRMn"/>
+</a>
+
 </p>
 </h1>
 
-
 > Work in progress
 
-## Introduction 
-A fun multiplayer turn based Pokémon cli game. 
+## Introduction
+
+A fun multiplayer turn based Pokémon cli game.
