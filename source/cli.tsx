@@ -1,7 +1,14 @@
 #!/usr/bin/env node
+import React from 'react';
 import { Command } from 'commander';
-
+import { render } from 'ink';
+import Gradient from 'ink-gradient';
+import BigText from 'ink-big-text';
 const program = new Command();
+
+if (process.argv.includes('-h') || process.argv.includes('--help')) {
+    render(<Gradient name="rainbow"><BigText text="Pokemon" /></Gradient>)
+}
 
 program
     .name("poki")
