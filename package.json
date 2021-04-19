@@ -1,9 +1,9 @@
 {
-	"name": "pokemon-cli-game",
+	"name": "poki",
 	"version": "0.0.0",
 	"license": "MIT",
 	"bin": {
-		"poke": "./src/cli/cli.js"
+		"poki": "./src/cli/cli.js"
 	},
 	"engines": {
 		"node": ">=10"
