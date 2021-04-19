@@ -9,13 +9,17 @@
 		"node": ">=10"
 	},
 	"scripts": {
-		"test": "jest .",
+		"test": "jest --ci --coverage && codecov",
 		"lint": "eslint --max-warnings 0 --config \".eslintrc.json\" \".\" "
 	},
 	"files": [
 		"cli.js",
 		"ui.js"
 	],
+	"jest": {
+		"coverageDirectory": "./coverage/",
+		"collectCoverage": true
+	},
 	"dependencies": {
 		"import-jsx": "^4.0.0",
 		"ink": "^3.0.8",
@@ -30,6 +34,7 @@
 		"@babel/register": "^7.13.14",
 		"ava": "^3.15.0",
 		"chalk": "^4.1.0",
+		"codecov": "^3.8.1",
 		"eslint": "^7.24.0",
 		"eslint-config-xo-react": "^0.25.0",
 		"eslint-plugin-react": "^7.23.2",
