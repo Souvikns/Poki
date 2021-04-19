@@ -8,5 +8,5 @@ const path = require("path");
 const viewFileFinder = (fileName) => path.resolve(__dirname, "views", fileName);
 
 module.exports = {
-  viewFileFinder,
-}
+	viewFileFinder,
+};
