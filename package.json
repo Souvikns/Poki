@@ -21,6 +21,7 @@
 		"collectCoverage": true
 	},
 	"dependencies": {
+		"cli-meow-help": "^2.0.2",
 		"import-jsx": "^4.0.0",
 		"ink": "^3.0.8",
 		"meow": "^9.0.0",
