@@ -1,28 +1,26 @@
-const { commands, helpCommandGenerator } = require('../../cli/commands');
+const {commands, helpCommandGenerator} = require('../../cli/commands');
 
 describe('running all the help commands', () => {
     it('pokedex help text', () => {
-        expect(helpCommandGenerator("pokedex")).toMatch(commands.pokedex.help);
-    })
-    
-    it("catch help text", () => {
-        expect(helpCommandGenerator("catch")).toMatch(commands.catch.help);
+  expect(helpCommandGenerator("pokedex")).toMatch(commands.pokedex.help);
     })
 
-    it("gym help text", () => {
-        expect(helpCommandGenerator("gym")).toMatch(commands.gym.help);
-    })
+it("catch help text", () => {
+  expect(helpCommandGenerator("catch")).toMatch(commands.catch.help);
+})
 
-    it("league help text", () => {
-        expect(helpCommandGenerator("league")).toMatch(commands.league.help);
-    })
+it("gym help text",
+   () => { expect(helpCommandGenerator("gym")).toMatch(commands.gym.help); })
 
-    it("init help text", () => {
-        expect(helpCommandGenerator("init")).toMatch(commands.init.help);
-    })
+it("league help text", () => {
+  expect(helpCommandGenerator("league")).toMatch(commands.league.help);
+})
+
+it("init help text",
+   () => { expect(helpCommandGenerator("init")).toMatch(commands.init.help); })
 
     it("whoami help text", () => {
-        expect(helpCommandGenerator("whoami")).toMatch(commands.whoami.help);
+  expect(helpCommandGenerator("whoami")).toMatch(commands.whoami.help);
     })
 
 })
