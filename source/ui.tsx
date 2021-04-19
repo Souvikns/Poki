@@ -5,7 +5,6 @@ import {Text} from 'ink';
 import Help from './components/help';
 
 const App: FC<{input: Array<string>, flags: any}> = ({input, flags }) => {
-	console.log(input, flags)
 	if(input.length !== 0){
 		if(flags.h || flags.help){
 			return <Help command={input[0]} />
@@ -14,7 +13,7 @@ const App: FC<{input: Array<string>, flags: any}> = ({input, flags }) => {
 	return <Text>
 		Hello
 	</Text>
-} 
+};
 
 module.exports = App;
 export default App;

@@ -1,5 +1,5 @@
 {
-	"name": "pokemon-cli-game",
+	"name": "poki",
 	"version": "0.0.0",
 	"license": "MIT",
 	"bin": "dist/cli.js",
@@ -10,10 +10,10 @@
 		"build": "tsc",
 		"start": "npm run build && node dist/cli.js",
 		"pretest": "npm run build",
-		"test": "xo && ava"
+		"test": "jest --coverage && codecov"
 	},
 	"files": [
-		"dist/cli.js"
+		"dist/"
 	],
 	"dependencies": {
 		"@asyncapi/parser": "^1.4.5",
@@ -29,6 +29,7 @@
 		"@types/jest": "^26.0.20",
 		"@types/react": "^17.0.2",
 		"chalk": "^4.1.0",
+		"codecov": "^3.8.1",
 		"eslint-plugin-react": "^7.22.0",
 		"eslint-plugin-react-hooks": "^4.2.0",
 		"ink-testing-library": "^2.1.0",
@@ -51,6 +52,8 @@
 			"jsx",
 			"json",
 			"node"
-		]
+		],
+		"coverageDirectory": "./coverage/",
+		"collectCoverage": true
 	}
 }
