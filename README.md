@@ -18,7 +18,7 @@ Poki
 <a href="https://codecov.io/gh/Tech-Phantoms/Poki">
 <img src="https://codecov.io/gh/Tech-Phantoms/Poki/branch/main/graph/badge.svg?token=FYklvhHRMn"/>
 </a>
-    
+
 </p>
 </h1>
 
