@@ -1,65 +1,65 @@
 {
-	"name": "poki",
-	"version": "0.0.0",
-	"license": "MIT",
-	"bin": {
-		"poki": "./src/cli/cli.js"
-	},
-	"engines": {
-		"node": ">=10"
-	},
-	"scripts": {
-		"test": "jest --ci --coverage && codecov",
-		"lint": "eslint --max-warnings 0 --config \".eslintrc.json\" \".\" "
-	},
-	"files": [
-		"cli.js",
-		"ui.js"
-	],
-	"jest": {
-		"coverageDirectory": "./coverage/",
-		"collectCoverage": true
-	},
-	"dependencies": {
-		"cli-meow-help": "^2.0.2",
-		"import-jsx": "^4.0.0",
-		"ink": "^3.0.8",
-		"meow": "^9.0.0",
-		"prop-types": "^15.7.2",
-		"react": "^17.0.2"
-	},
-	"devDependencies": {
-		"@ava/babel": "^1.0.1",
-		"@babel/preset-env": "^7.13.15",
-		"@babel/preset-react": "^7.13.13",
-		"@babel/register": "^7.13.14",
-		"ava": "^3.15.0",
-		"chalk": "^4.1.0",
-		"codecov": "^3.8.1",
-		"eslint": "^7.24.0",
-		"eslint-config-xo-react": "^0.25.0",
-		"eslint-plugin-react": "^7.23.2",
-		"eslint-plugin-react-hooks": "^4.2.0",
-		"ink-testing-library": "^2.1.0",
-		"jest": "^26.6.3",
-		"xo": "^0.38.2"
-	},
-	"ava": {
-		"babel": true,
-		"require": [
-			"@babel/register"
-		]
-	},
-	"babel": {
-		"presets": [
-			"@babel/preset-env",
-			"@babel/preset-react"
-		]
-	},
-	"xo": {
-		"extends": "xo-react",
-		"rules": {
-			"react/prop-types": "off"
-		}
-	}
+  "name": "poki",
+  "version": "0.0.0",
+  "license": "MIT",
+  "bin": {
+    "poki": "./src/cli/cli.js"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "test": "jest --ci --coverage && codecov",
+    "lint": "eslint --max-warnings 0 --config \".eslintrc.json\" \".\" "
+  },
+  "files": [
+    "cli.js",
+    "ui.js"
+  ],
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
+  "dependencies": {
+    "cli-meow-help": "^2.0.2",
+    "import-jsx": "^4.0.0",
+    "ink": "^3.0.8",
+    "meow": "^9.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@ava/babel": "^1.0.1",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/register": "^7.13.14",
+    "ava": "^3.15.0",
+    "chalk": "^4.1.0",
+    "codecov": "^3.8.1",
+    "eslint": "^7.24.0",
+    "eslint-config-xo-react": "^0.25.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "ink-testing-library": "^2.1.0",
+    "jest": "^26.6.3",
+    "xo": "^0.38.2"
+  },
+  "ava": {
+    "babel": true,
+    "require": [
+      "@babel/register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "xo": {
+    "extends": "xo-react",
+    "rules": {
+      "react/prop-types": "off"
+    }
+  }
 }
