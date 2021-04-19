@@ -1,5 +1,5 @@
 <h1 align="center">
-Pokemon-cli-game
+Poki
 <br> <br>
 <p>
 <img src="./static/pokeball.svg" width="100">
