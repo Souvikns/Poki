@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import {Text} from 'ink';
 
-// importing components 
+// importing components
 import Help from './components/help';
 
 const App: FC<{input: Array<string>, flags: any}> = ({input, flags }) => {
