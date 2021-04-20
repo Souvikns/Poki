@@ -1,27 +1,23 @@
-import { Gym } from './gym';
-import { Pokemon } from './pokemon';
 import { Reader } from './reader';
+import { _Gym, _Pokemon } from '../../types';
 
 export class GameData {
-    private gyms: Array<Gym>;
-    private pokemons: Array<Pokemon>;
-    constructor(gyms: Array<Gym>, pokemons: Array<Pokemon>) {
+    private gyms: Array<_Gym>;
+    private pokemons: Array<_Pokemon>;
+    constructor(gyms: Array<_Gym>, pokemons: Array<_Pokemon>) {
         this.gyms = gyms;
         this.pokemons = pokemons;
     }
 
-    public getPokemons(): Array<Pokemon> {
+    public getPokemons(): Array<_Pokemon> {
         return this.pokemons;
     }
-    public getGyms(): Array<Gym> {
+    public getGyms(): Array<_Gym> {
         return this.gyms;
     }
 
     static loadGameData() {
         let data = Reader.read();
-        return new GameData(
-            data.gyms.map(gym => new Gym()),
-            data.pokemons.map(pokemon => new Pokemon(pokemon.name, pokemon.type))
-        );
+        return new GameData(data.gyms, data.pokemons);
     }
 }

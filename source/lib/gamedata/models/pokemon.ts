@@ -1,4 +1,4 @@
-import {PokemonType,PokemonDetail} from '../../types';
+import {PokemonType} from '../../types';
 
 export class Pokemon {
     private name:string;
@@ -8,18 +8,11 @@ export class Pokemon {
         this.type = type;
     }
 
-    details(): PokemonDetail{
-        return {
-            name: this.name,
-            type: this.type
-        }
-    }
-    
-    getName(){
-        return this.name
+    public getName(): string{
+        return this.name;
     }
 
-    getType(){
-        return this.type;
+    public getType(): Array<PokemonType> {
+        return this.type
     }
 }

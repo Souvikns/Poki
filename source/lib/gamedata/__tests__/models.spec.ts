@@ -17,13 +17,6 @@ describe('Pokemon model should have', () => {
         expect(pokemon?.getType()).toEqual([PokemonType.fire, PokemonType.flying]);
     })
 
-    test("shoulf have details object", () => {
-        expect(pokemon?.details()).toEqual({
-            name: "Charizard",
-            type: [PokemonType.fire, PokemonType.flying]
-        })
-    })
-
 })
 
 
