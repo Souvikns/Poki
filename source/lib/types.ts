@@ -59,6 +59,18 @@ export enum Badges {
     earth = "Earth"
 }
 
+export enum NPC {
+    brock = "Brock",
+    misty = "Misty",
+    surge = "Lt. Surge",
+    erika = "Erika",
+    koga = "koga",
+    janine = "Janine",
+    sabrina = "Sabrina",
+    blaine = "Blaine",
+    giovanni = "Giovanni"
+}
+
 export interface stat {
    hp: number,
    attack: number,
