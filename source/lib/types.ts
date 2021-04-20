@@ -51,7 +51,7 @@ export enum Region {
 export interface stat {
    hp: number,
    attack: number,
-   defence: number 
+   defence: number
 }
 
 export interface _Pokemon {
