@@ -1,0 +1,20 @@
+export enum Type {
+    normal,
+    fighting,
+    flying,
+    poison,
+    ground,
+    rock,
+    bug,
+    ghost,
+    steal,
+    fire,
+    water,
+    grass,
+    electric,
+    psychic,
+    ice,
+    dragon,
+    dark,
+    fairy
+}
