@@ -1,5 +1,6 @@
 import { Gym } from './gym';
 import { Pokemon } from './pokemon';
+import { Reader } from './reader';
 
 export class GameData {
     private gyms: Array<Gym>;
@@ -17,6 +18,10 @@ export class GameData {
     }
 
     static loadGameData() {
-        return new GameData();
+        let data = Reader.read();
+        return new GameData(
+            data.gyms.map(gym => new Gym()),
+            data.pokemons.map(pokemon => new Pokemon(pokemon.name, pokemon.type))
+        );
     }
 }

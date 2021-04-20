@@ -19,16 +19,11 @@ export enum PokemonType {
     fairy
 }
 
-export interface Gym {
+export interface _Gym {
     name: string,
     type: string,
-    leader: Array<string>,
+    leader: string[],
     badge: string
-}
-
-export interface PokemonDetail {
-    name: string,
-    type: Array<PokemonType>
 }
 
 export enum Generation {
@@ -51,4 +46,22 @@ export enum Region {
     unova = "Unova",
     kalos = "Kalos",
     alola = "Alola",
+}
+
+export interface stat {
+   hp: number,
+   attack: number,
+   defence: number 
+}
+
+export interface _Pokemon {
+    id: number,
+    name: string,
+    height: number,
+    weight: number,
+    type: Array<PokemonType>
+    stats: {
+        base: stat,
+        max: stat
+    }
 }
