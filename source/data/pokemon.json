@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Bulbasaur",
+        "height": 0.7,
+        "weight": 6.9,
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "stats": {
+            "base": {
+                "hp": 45,
+                "attack": 49,
+                "defence": 49
+            },
+            "max": {
+                "hp": 200,
+                "attack": 92,
+                "defence": 92
+            }
+        },
+        "evolution": {
+            "base": "Bulbasaur",
+            "evolve": 0
+        }
+    },
+    {
+        "name": "Ivysaur",
+        "weight": 1.0,
+        "height": 13,
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "stats": {
+            "base": {
+                "hp": 60,
+                "attack": 62,
+                "defence": 63
+            },
+            "max": {
+                "hp": 230,
+                "attack": 116,
+                "defence": 117
+            }
+        },
+        "evolution": {
+            "base": "Bulbasaur",
+            "evolve": 1
+        }
+    },
+    {
+        "name": "Venusaur",
+        "type": [
+            "grass",
+            "poison"
+        ],
+        "height": 2.0,
+        "weight": 100,
+        "stats": {
+            "base": {
+                "hp": 80,
+                "attack": 82,
+                "defence": 83
+            },
+            "max": {
+                "hp": 270,
+                "attack": 152,
+                "defence": 153
+            }
+        },
+        "evolution": {
+            "base": "Bulbasaur",
+            "evolve": 2
+        }
+    }
+]
