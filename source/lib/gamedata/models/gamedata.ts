@@ -18,6 +18,7 @@ export class GameData {
 
     static loadGameData() {
         let data = Reader.read();
+        // TODO: generate complete npc charachter and gyms datas.
         return new GameData(data.gyms, data.pokemons);
     }
 }

@@ -48,6 +48,17 @@ export enum Region {
     alola = "Alola",
 }
 
+export enum Badges {
+    bolder = "Bolder",
+    cascade = "Cascade",
+    thunder = "Thunder",
+    rainbow = "Rainbow",
+    soul = "Soul",
+    marsh = "Marsh",
+    volcano = "Volcano",
+    earth = "Earth"
+}
+
 export interface stat {
    hp: number,
    attack: number,
