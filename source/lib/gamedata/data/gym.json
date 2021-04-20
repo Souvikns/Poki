@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Pewter",
+        "type": "rock",
+        "leader": [
+            "Brock"
+        ],
+        "badge": "Boulder"
+    },
+    {
+        "name": "Cerulean",
+        "type": "water",
+        "leader": [
+            "Misty"
+        ],
+        "badge": "Cascade"
+    },
+    {
+        "name": "Vermilion",
+        "type": "electric",
+        "leader": [
+            "Lt Surge"
+        ],
+        "badge": "Thunder"
+    },
+    {
+        "name": "Celadon",
+        "type": "grass",
+        "leader": [
+            "Erika"
+        ],
+        "badge": "Rainbow"
+    },
+    {
+        "name": "Fuchsia",
+        "type": "poison",
+        "leader": [
+            "Koga",
+            "Jaine"
+        ],
+        "badge": "Soul"
+    },
+    {
+        "name": "Saffron",
+        "type": "psychic",
+        "leader": [
+            "Sabrina"
+        ],
+        "badge": "Marsh"
+    },
+    {
+        "name": "Cinnabar",
+        "type": "fire",
+        "leader": [
+            "Blaine"
+        ],
+        "badge": "Volcano"
+    },
+    {
+        "name": "Viridian",
+        "type": "ground",
+        "leader": [
+            "Giovanni"
+        ],
+        "badge": "Earth"
+    }
+]

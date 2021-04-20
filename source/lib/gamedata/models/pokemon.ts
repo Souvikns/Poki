@@ -1,4 +1,4 @@
-import {PokemonType} from '../../types';
+import {PokemonType,PokemonDetail} from '../../types';
 
 export class Pokemon {
     private name:string;
@@ -8,10 +8,18 @@ export class Pokemon {
         this.type = type;
     }
 
-    details(){
+    details(): PokemonDetail{
         return {
             name: this.name,
             type: this.type
         }
+    }
+    
+    getName(){
+        return this.name
+    }
+
+    getType(){
+        return this.type;
     }
 }

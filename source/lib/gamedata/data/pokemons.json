@@ -1,0 +1,80 @@
+[
+    {
+        "id": 0,
+        "name": "Bulbasaur",
+        "height": 0.7,
+        "weight": 6.9,
+        "type": ["grass", "posion"],
+        "base_stats": {
+            "hp": 45,
+            "attack": 49,
+            "defence": 49,
+            "speed": 45
+        }
+    },
+    {
+        "id": 1,
+        "name": "Ivysaur",
+        "height": 1.0,
+        "weight": 13.0,
+        "type": ["grass", "posion"],
+        "base_stats": {
+            "hp": 60,
+            "attack": 62,
+            "defence": 63,
+            "speed": 60
+        }
+    },
+    {
+        "id": 2,
+        "name": "Venusaur",
+        "type": ["grass", "posion"],
+        "height": 2.0,
+        "weight": 100.0,
+        "base_stats": {
+            "hp": 80,
+            "attack": 82,
+            "defence": 83,
+            "speed": 80
+        }
+    },
+    {
+        "id": 3,
+        "name": "Charmander",
+        "type": ["fire"],
+        "height": 0.6,
+        "weight": 8.5,
+        "base_stats": {
+            "hp": 39,
+            "attack": 52,
+            "defence": 43,
+            "speed": 65
+        }
+    },
+    {
+        "id": 4,
+        "name": "Charmeleon",
+        "type": ["fire"],
+        "height": 1.1,
+        "weight": 19.0,
+        "base_stats": {
+            "hp": 58,
+            "attack": 64,
+            "defence": 58,
+            "speed": 80
+        }
+    },
+    {
+        "id": 5,
+        "name": "Charizard",
+        "type": ["fire", "flying"],
+        "height": 1.7,
+        "weight": 90.5,
+        "base_stats": {
+            "hp": 78,
+            "attack": 84,
+            "defence": 78,
+            "speed": 100
+        }
+    }
+]
