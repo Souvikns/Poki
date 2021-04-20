@@ -1,48 +1,56 @@
 [
 	{
 		"name": "Pewter",
+		"region": "Kanto",
 		"type": "rock",
 		"leader": ["Brock"],
 		"badge": "Boulder"
 	},
 	{
 		"name": "Cerulean",
+		"region": "Kanto",
 		"type": "water",
 		"leader": ["Misty"],
 		"badge": "Cascade"
 	},
 	{
 		"name": "Vermilion",
+		"region": "Kanto",
 		"type": "electric",
 		"leader": ["Lt Surge"],
 		"badge": "Thunder"
 	},
 	{
 		"name": "Celadon",
+		"region": "Kanto",
 		"type": "grass",
 		"leader": ["Erika"],
 		"badge": "Rainbow"
 	},
 	{
 		"name": "Fuchsia",
+		"region": "Kanto",
 		"type": "poison",
 		"leader": ["Koga", "Jaine"],
 		"badge": "Soul"
 	},
 	{
 		"name": "Saffron",
+		"region": "Kanto",
 		"type": "psychic",
 		"leader": ["Sabrina"],
 		"badge": "Marsh"
 	},
 	{
 		"name": "Cinnabar",
+		"region": "Kanto",
 		"type": "fire",
 		"leader": ["Blaine"],
 		"badge": "Volcano"
 	},
 	{
 		"name": "Viridian",
+		"region": "Kanto",
 		"type": "ground",
 		"leader": ["Giovanni"],
 		"badge": "Earth"

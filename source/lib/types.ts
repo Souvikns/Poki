@@ -21,6 +21,7 @@ export enum PokemonType {
 
 export interface _Gym {
     name: string,
+    region: Region,
     type: string,
     leader: string[],
     badge: string
