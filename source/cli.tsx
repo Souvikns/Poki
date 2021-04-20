@@ -25,7 +25,6 @@ program
     .option('-g, --gym', "search details for gym")
     .option('-l, --league', "search details about leagues")
     .action(() => {
-
     })
 
 
