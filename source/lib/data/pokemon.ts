@@ -1,4 +1,6 @@
-import { Type, PokemonName, pokemon, Quick_Move, Main_Move } from '../types';
+import { Type, pokemon, Quick_Move, Main_Move, PokemonName } from '../types';
+
+
 
 export const pokemonData: Array<pokemon> = [
     {
