@@ -13,8 +13,8 @@ import Pokedex from './components/pokedex';
 
 const program = new Command();
 
-if (process.argv.includes('-h') || process.argv.includes('--help')) {
-    render(<Gradient name="rainbow"><BigText text="Pokemon" /></Gradient>)
+if (process.argv.length === 2) {
+    render(<Gradient name="retro"><BigText text="Poki" /></Gradient>)
 }
 
 program
@@ -25,10 +25,8 @@ program
 
 program
     .command("pokedex")
-    .description("digital encyclopedia")
-    .option("-i, --index", "checkout all the pokemons currently in the game")
-    .option("-o, --owned", "my pokemons")
-    .option("-p, --pokemon <name>", "search specific pokemon")
+    .description("A digital encyclopedia, which gives information about all pokemons")
+    .option("-p, --pokemon <name>", "pass in pokemon name to search")
     .action((options) => {
         render(<Pokedex flag={options} />)
     })
@@ -44,10 +42,18 @@ program
 
 program
     .command("battle")
-    .option("battle with win XP")
+    .description("Battle against gym leaders or participate in leagues to win rewards")
     .option("-g, --gym", "battle in a gym to earn badges")
     .option("-l, --league", "battle in a leage to earn cup")
     .option("-o, --online", "battle online")
+    .action(() => {
+
+    })
+
+program
+    .command("profile")
+    .description("open profile to manage your data")
+    .option("-p, --pokemon", "search your owned pokemons")
     .action(() => {
 
     })
