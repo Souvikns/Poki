@@ -1,7 +1,8 @@
 import React, { FC } from 'react';
-import { Text } from 'ink'
+import { Text, Newline } from 'ink'
 import { Database, Pokemon } from '../../lib'
 import Err from './error';
+import Type from './type';
 
 const Pokemon: FC<{ name: string }> = ({ name }) => {
 
@@ -12,7 +13,10 @@ const Pokemon: FC<{ name: string }> = ({ name }) => {
     }
 
     return <>
-        <Text>{pokemon?.name}</Text>
+        <Text>{pokemon.name}</Text>
+        <Newline />
+
+        <Type types={pokemon.type} />
     </>
 }
 
