@@ -1,12 +1,13 @@
 import React, {FC} from 'react';
 import {Text} from 'ink'
 
+// importing components
+import Pokemon from './pokemon';
+
 const Pokedex: FC<{flag: any}> = ({flag}) => {
 
     if(flag.pokemon){
-        return <>
-        <Text>Pokemon</Text>
-        </>
+        return <Pokemon name={flag.pokemon} />
     }
 
     if(flag.index){

@@ -54,7 +54,7 @@ program
 
 
 program.on('command:*', (command) => {
-    render(<Err command={command}/>)
+    render(<Err command={command} />)
     program.help();
 })
 
