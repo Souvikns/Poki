@@ -1,10 +1,13 @@
 import React, { FC } from 'react';
-import {Text} from 'ink'
+import { Text } from 'ink'
+import { Database, Pokemon } from '../../lib'
 
 const Pokemon: FC<{ name: string }> = ({ name }) => {
 
+    let pokemon: Pokemon | undefined = Database.getPokemon(name);
+
     return <>
-        <Text>{name}</Text>
+        <Text>{pokemon?.name}</Text>
     </>
 }
 
