@@ -19,6 +19,17 @@ export enum Type {
     fairy = "fairy"
 }
 
+export enum Quick_Move {
+    vineWhip = "Vine Whip",
+    tackle = "Tackle"
+}
+
+export enum Main_Move {
+    seedBomb = "Seed Bomb",
+    sludgeBomb = "Sludge Bomb",
+    powerWhip = "Power Whip"
+}
+
 export enum PokemonName {
     bulbasaur = "Bulbasaur"
 }
@@ -38,5 +49,6 @@ export interface pokemon {
     type: Array<Type>,
     hp: { base: number, max: number },
     cp: {max: CP}
+    moves: {quick: Array<Quick_Move>, main: Array<Main_Move>}
     evolution: { base: PokemonName, evolve: number }
 }

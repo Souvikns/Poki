@@ -1,4 +1,4 @@
-import { Type, PokemonName, pokemon } from '../types';
+import { Type, PokemonName, pokemon, Quick_Move, Main_Move } from '../types';
 
 export const pokemonData: Array<pokemon> = [
     {
@@ -18,6 +18,10 @@ export const pokemonData: Array<pokemon> = [
                 "30": 955,
                 "40": 1115
             }
+        },
+        moves: {
+            quick: [Quick_Move.vineWhip, Quick_Move.tackle],
+            main: [Main_Move.powerWhip, Main_Move.seedBomb, Main_Move.sludgeBomb]
         },
         evolution: {
             base: PokemonName.bulbasaur,
