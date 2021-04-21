@@ -1,4 +1,7 @@
-
+export interface Pokemon {
+    name: string,
+    type: Array<string>
+}
 
 export interface CP {
     15: number,
@@ -32,4 +35,8 @@ export enum Type {
     fairy = "fairy"
 }
 
-
+export enum PokemonName {
+    bulbasaur = "Bulbasaur",
+    ivysaur = "Ivysaur",
+    venusaur = "Venusaur"
+}
