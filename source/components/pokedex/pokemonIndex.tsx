@@ -35,7 +35,7 @@ const PokemonIndex: FC<{}> = ({ }) => {
         }
 
         if (input) {
-            
+
         }
     })
 
