@@ -13,7 +13,7 @@ const Pokemon: FC<{ name: string }> = ({ name }) => {
     }
 
     return <>
-        <Text>{pokemon.name}</Text>
+        <Text bold>{pokemon.name}</Text>
         <Newline />
 
         <Type types={pokemon.type} />

@@ -10,7 +10,7 @@ const Type: FC<{ types: Array<string> }> = ({ types }) => {
         </Box>
         <Box>
             {types.map(type => <Box key={type} marginRight={2}>
-                <Text backgroundColor={getTypeColor(type)}>{` ${type} `}</Text>
+                <Text bold backgroundColor={getTypeColor(type)}>{` ${type} `}</Text>
             </Box>)}
         </Box>
     </Box>
