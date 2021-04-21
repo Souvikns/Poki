@@ -22,6 +22,5 @@ export class Move {
         this.weakVs = weakVs;
         this.ineffectiveVs = ineffectiveVs;
     }
-    
-}
 
+}
