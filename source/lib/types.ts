@@ -30,7 +30,7 @@ export interface CP {
 }
 
 
-// ENUMS 
+// ENUMS
 
 
 export enum Type {
@@ -252,4 +252,3 @@ export enum PokemonName {
     growlithe = "Growlithe",
     arcanine = "Arcanine",
 }
-
