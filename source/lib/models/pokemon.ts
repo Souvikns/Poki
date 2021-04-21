@@ -22,5 +22,5 @@ export class Pokemon{
         this.type = type
         this.hp = hp
     }
-    
+
 }

@@ -8,7 +8,7 @@ export class Database {
     private pokemons: Array<pokemon> = pokemonData;
     private quickMoves: Array<Quickmove> = quick;
     private mainMoves:Array<Mainmove> = main;
-    
+
     public getPokemons(){
         return this.pokemons;
     }
@@ -33,5 +33,5 @@ export class Database {
         return _.find(this.mainMoves, mm => mm.name === name);
     }
 
-    
+
 }

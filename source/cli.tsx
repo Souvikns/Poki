@@ -7,7 +7,7 @@ import BigText from 'ink-big-text';
 import Err from './components/error';
 
 
-// importing components 
+// importing components
 import Pokedex from './components/pokedex';
 
 
