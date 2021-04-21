@@ -1,16 +1,15 @@
 import React, { FC } from 'react';
-import { Text, render } from 'ink'
+import { Text } from 'ink'
 import SelectInput from 'ink-select-input';
 
 // importing components
 import Pokemon from './pokemon';
-import PokemonIndex from './pokemonIndex';
 
 const Pokedex: FC<{ flag: any }> = ({ flag }) => {
 
     const handleSelect = (item: any) => {
         if(item.value === 0){
-            render(<PokemonIndex />)
+            
         }
     }
 
