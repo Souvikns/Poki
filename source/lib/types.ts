@@ -21,13 +21,15 @@ export enum Type {
 
 export enum Quick_Move {
     vineWhip = "Vine Whip",
-    tackle = "Tackle"
+    tackle = "Tackle",
+    struggle = "Struggle"
 }
 
 export enum Main_Move {
     seedBomb = "Seed Bomb",
     sludgeBomb = "Sludge Bomb",
-    powerWhip = "Power Whip"
+    powerWhip = "Power Whip",
+    originPulse = "Origin Pulse"
 }
 
 export enum PokemonName {
@@ -51,4 +53,16 @@ export interface pokemon {
     cp: {max: CP}
     moves: {quick: Array<Quick_Move>, main: Array<Main_Move>}
     evolution: { base: PokemonName, evolve: number }
+}
+
+export interface Quickmove {
+    name: Quick_Move,
+    type: Type,
+    dps: number
+}
+
+export interface Mainmove {
+    name: Main_Move,
+    type: Type,
+    dps: number
 }
