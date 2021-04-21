@@ -5,6 +5,12 @@ import { render } from 'ink';
 import Gradient from 'ink-gradient';
 import BigText from 'ink-big-text';
 import Err from './components/error';
+
+
+// importing components 
+import Pokedex from './components/pokedex';
+
+
 const program = new Command();
 
 if (process.argv.includes('-h') || process.argv.includes('--help')) {
@@ -22,8 +28,9 @@ program
     .description("digital encyclopedia")
     .option("-i, --index", "checkout all the pokemons currently in the game")
     .option("-o, --owned", "my pokemons")
-    .option("-p, --profile", "open my profile")
-    .action(() => {
+    .option("-p, --pokemon <name>", "search specific pokemon")
+    .action((options) => {
+        render(<Pokedex flag={options} />)
     })
 
 
