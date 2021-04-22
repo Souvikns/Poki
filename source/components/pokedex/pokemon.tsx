@@ -1,6 +1,8 @@
 import React, { FC } from 'react';
-import { Text, Newline } from 'ink'
+import { Box } from 'ink'
 import { Database, Pokemon } from '../../lib'
+import BigText from 'ink-big-text';
+import Gradient from 'ink-gradient';
 import Err from './error';
 import Type from './type';
 
@@ -13,10 +15,18 @@ const Pokemon: FC<{ name: string }> = ({ name }) => {
     }
 
     return <>
-        <Text bold>{pokemon.name}</Text>
-        <Newline />
+        <Box borderStyle="round" borderColor="cyan" margin={1} padding={1} flexDirection="column">
+            <Box justifyContent="center" flexDirection="row">
+                <Gradient name="morning">
+                    <BigText text={pokemon.name} font="tiny" />
+                </Gradient>
 
-        <Type types={pokemon.type} />
+            </Box>
+
+            <Type types={pokemon.type} />
+        </Box>
+
+
     </>
 }
 
