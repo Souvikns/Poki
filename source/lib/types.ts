@@ -16,7 +16,7 @@ export interface CP {
 }
 
 
-// ENUMS 
+// ENUMS
 
 
 export enum Type {
