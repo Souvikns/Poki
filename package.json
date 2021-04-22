@@ -1,70 +1,70 @@
 {
-  "name": "poki",
-  "version": "0.0.0",
-  "license": "MIT",
-  "bin": "dist/cli.js",
-  "engines": {
-    "node": ">=10"
-  },
-  "scripts": {
-    "build": "tsc",
-    "start": "npm run build && node dist/cli.js",
-    "pretest": "npm run build",
-    "test": "jest --coverage && codecov",
-    "test:watch": "jest --watch"
-  },
-  "files": [
-    "dist/"
-  ],
-  "dependencies": {
-    "@asyncapi/parser": "^1.4.5",
-    "@types/ink-select-input": "^3.0.0",
-    "@types/node": "^14.14.41",
-    "commander": "^7.2.0",
-    "ink": "^3.0.8",
-    "ink-big-text": "^1.2.0",
-    "ink-gradient": "^2.0.0",
-    "ink-link": "^2.0.0",
-    "ink-select-input": "^4.2.0",
-    "lodash": "^4.17.21",
-    "meow": "^9.0.0",
-    "react": "^17.0.1",
-    "reflect-metadata": "^0.1.13",
-    "tsyringe": "^4.5.0"
-  },
-  "devDependencies": {
-    "@sindresorhus/tsconfig": "^0.9.0",
-    "@types/ink-big-text": "^1.2.0",
-    "@types/ink-gradient": "^2.0.1",
-    "@types/jest": "^26.0.20",
-    "@types/lodash": "^4.14.168",
-    "@types/react": "^17.0.2",
-    "chalk": "^4.1.0",
-    "codecov": "^3.8.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "ink-testing-library": "^2.1.0",
-    "jest": "^26.6.3",
-    "ts-jest": "^26.5.3",
-    "typescript": "^4.2.3"
-  },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "<rootDir>/test/setupTests.ts"
-    ],
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ],
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true
-  }
+	"name": "poki",
+	"version": "0.0.0",
+	"license": "MIT",
+	"bin": "dist/cli.js",
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"build": "tsc",
+		"start": "npm run build && node dist/cli.js",
+		"pretest": "npm run build",
+		"test": "jest --coverage && codecov",
+		"test:watch": "jest --watch"
+	},
+	"files": [
+		"dist/"
+	],
+	"dependencies": {
+		"@asyncapi/parser": "^1.4.5",
+		"@types/ink-select-input": "^3.0.0",
+		"@types/node": "^14.14.41",
+		"commander": "^7.2.0",
+		"ink": "^3.0.8",
+		"ink-big-text": "^1.2.0",
+		"ink-gradient": "^2.0.0",
+		"ink-link": "^2.0.0",
+		"ink-select-input": "^4.2.0",
+		"lodash": "^4.17.21",
+		"meow": "^9.0.0",
+		"react": "^17.0.1",
+		"reflect-metadata": "^0.1.13",
+		"tsyringe": "^4.5.0"
+	},
+	"devDependencies": {
+		"@sindresorhus/tsconfig": "^0.9.0",
+		"@types/ink-big-text": "^1.2.0",
+		"@types/ink-gradient": "^2.0.1",
+		"@types/jest": "^26.0.20",
+		"@types/lodash": "^4.14.168",
+		"@types/react": "^17.0.2",
+		"chalk": "^4.1.0",
+		"codecov": "^3.8.1",
+		"eslint-plugin-react": "^7.22.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"ink-testing-library": "^2.1.0",
+		"jest": "^26.6.3",
+		"ts-jest": "^26.5.3",
+		"typescript": "^4.2.3"
+	},
+	"jest": {
+		"setupFilesAfterEnv": [
+			"<rootDir>/test/setupTests.ts"
+		],
+		"transform": {
+			"^.+\\.tsx?$": "ts-jest"
+		},
+		"testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(tsx?)$",
+		"moduleFileExtensions": [
+			"ts",
+			"tsx",
+			"js",
+			"jsx",
+			"json",
+			"node"
+		],
+		"coverageDirectory": "./coverage/",
+		"collectCoverage": true
+	}
 }
