@@ -2,6 +2,10 @@ export interface Pokemon {
     id: number,
     name: string,
     type: Array<string>
+    evolution: {
+        base: string,
+        evolve: number
+    }
 }
 
 export interface CP {
