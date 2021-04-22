@@ -1,33 +1,31 @@
-import { Type, pokemon, Quick_Move, Main_Move, PokemonName } from '../types';
+import { Pokemon, PokemonName, Type } from '../types';
 
-
-
-export const pokemonData: Array<pokemon> = [
+export const PokemonData: Array<Pokemon> = [
     {
         id: 0,
         name: PokemonName.bulbasaur,
-        height: 0.7,
-        weight: 6.9,
-        type: [
-            Type.grass,
-            Type.poison
-        ],
-        hp: { base: 45, max: 112 },
-        cp: {
-            max: {
-                "15": 477,
-                "20": 637,
-                "30": 955,
-                "40": 1115
-            }
-        },
-        moves: {
-            quick: [Quick_Move.vineWhip, Quick_Move.tackle],
-            main: [Main_Move.powerWhip, Main_Move.seedBomb, Main_Move.sludgeBomb]
-        },
+        type: [Type.grass, Type.poison],
         evolution: {
             base: PokemonName.bulbasaur,
             evolve: 0
+        }
+    },
+    {
+        id: 1,
+        name: PokemonName.ivysaur,
+        type: [Type.grass, Type.poison],
+        evolution: {
+            base: PokemonName.bulbasaur,
+            evolve: 1
+        }
+    },
+    {
+        id: 2,
+        name: PokemonName.venusaur,
+        type: [Type.grass, Type.poison],
+        evolution: {
+            base: PokemonName.bulbasaur,
+            evolve: 2
         }
     }
 ]

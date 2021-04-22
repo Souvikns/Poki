@@ -1,33 +1,19 @@
 import {
     CP,
-    Main_Move,
-    Mainmove,
-    PokemonName,
-    Quick_Move,
-    Quickmove,
     Type,
-    pokemon
+    Pokemon,
+    PokemonName
 } from './types';
 
-import { MainMove } from './models/main_move';
-import { Move } from './models/move'
-import { QuickMove } from './models/quick_move'
 import { Penalty } from './models/Penalty'
-
+import { Database } from './models/database'
 
 
 export {
     CP,
-    Main_Move,
-    Mainmove,
-    PokemonName,
-    Quick_Move,
-    Quickmove,
     Type,
-    pokemon,
-
-    MainMove,
-    Move,
+    Pokemon,
+    PokemonName,
     Penalty,
-    QuickMove,
+    Database
 };

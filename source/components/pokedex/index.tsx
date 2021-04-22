@@ -1,39 +1,19 @@
 import React, { FC } from 'react';
-import { Text, render } from 'ink'
-import SelectInput from 'ink-select-input';
+import { Text } from 'ink'
+import { Database } from '../../lib'
 
 // importing components
 import Pokemon from './pokemon';
-import PokemonIndex from './pokemonIndex';
 
 const Pokedex: FC<{ flag: any }> = ({ flag }) => {
-
-    const handleSelect = (item: any) => {
-        if(item.value === 0){
-            render(<PokemonIndex />)
-        }
-    }
 
     if (flag.pokemon) {
         return <Pokemon name={flag.pokemon} />
     }
 
-    if (flag.index) {
-        return <>
-            <Text>Pokemon Index</Text>
-        </>
-    }
-
-    if (flag.owned) {
-        return <>
-            <Text>Owned Pokemon</Text>
-        </>
-    }
-
-    return <SelectInput items={[
-        { label: "pokemon index", value: 0 },
-        { label: "my pokemons", value: 1 },
-    ]} onSelect={handleSelect} />
+    return <>
+        {Database.getAllPokemon().map(pokemon => <Text key={pokemon.name}>{pokemon.name}</Text>)}
+    </>
 }
 
 module.exports = Pokedex;
