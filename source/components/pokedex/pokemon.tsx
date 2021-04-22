@@ -4,7 +4,7 @@ import { Database, Pokemon } from '../../lib'
 import BigText from 'ink-big-text';
 import Gradient from 'ink-gradient';
 
-//importing custom components 
+//importing custom components
 import Err from './error';
 import Type from './type';
 import Evolution from './evolution';
