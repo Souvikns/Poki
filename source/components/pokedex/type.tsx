@@ -6,7 +6,7 @@ const Type: FC<{ types: Array<string> }> = ({ types }) => {
 
     return <Box>
         <Box marginRight={3}>
-            <Text>Type: </Text>
+            <Text bold>Type: </Text>
         </Box>
         <Box>
             {types.map(type => <Box key={type} marginRight={2}>
