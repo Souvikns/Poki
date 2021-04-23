@@ -6,3 +6,4 @@ enabled = true
 
   [analyzers.meta]
   plugins = ["react"]
+dialect = "typescript"
