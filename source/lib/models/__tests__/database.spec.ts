@@ -1,7 +1,7 @@
 import { Database } from '../database';
 
 describe("database class should", () => {
-    test("evolutions of a pokemon", () => {
+    test("return evolutions of a pokemon", () => {
         let evolution = Database.getEvolution("Bulbasaur");
         expect(evolution.length).toEqual(3);
     })
@@ -13,7 +13,7 @@ describe("database class should", () => {
         })
     })
 
-    test("evolution returs sorted value", () => {
+    test("return sorted evolution values", () => {
         let evolution = Database.getEvolution("Bulbasaur");
         expect(evolution[0]?.evolution.evolve).toEqual(0);
     })
