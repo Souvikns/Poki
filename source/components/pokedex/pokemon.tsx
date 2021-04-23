@@ -21,7 +21,7 @@ const Pokemon: FC<{ name: string }> = ({ name }) => {
         <Box borderStyle="round" borderColor="cyan" margin={2} padding={1} flexDirection="column">
             <Box justifyContent="center" flexDirection="row">
                 <Gradient name="morning">
-                    <BigText text={pokemon.name} font="tiny" />
+                    <BigText text={pokemon.name} font="simple" />
                 </Gradient>
 
             </Box>
