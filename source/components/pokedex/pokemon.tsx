@@ -9,7 +9,7 @@ import Err from './error';
 import Type from './type';
 import Evolution from './evolution';
 
-const Pokemon: FC<{ name: string }> = ({ name }) => {
+const PokemonUI: FC<{ name: string }> = ({ name }) => {
 
     let pokemon: Pokemon | undefined = Database.getPokemon(name);
 
@@ -41,5 +41,5 @@ const Pokemon: FC<{ name: string }> = ({ name }) => {
     </>
 }
 
-module.exports = Pokemon;
-export default Pokemon;
+module.exports = PokemonUI;
+export default PokemonUI;

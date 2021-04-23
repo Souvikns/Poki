@@ -3,12 +3,12 @@ import { Text } from 'ink'
 import { Database } from '../../lib'
 
 // importing components
-import Pokemon from './pokemon';
+import PokemonUI from './pokemon';
 
 const Pokedex: FC<{ flag: any }> = ({ flag }) => {
 
     if (flag.pokemon) {
-        return <Pokemon name={flag.pokemon} />
+        return <PokemonUI name={flag.pokemon} />
     }
 
     return <>
