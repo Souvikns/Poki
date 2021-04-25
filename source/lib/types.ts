@@ -1,4 +1,4 @@
-export interface Pokemon {
+export interface _Pokemon {
     id: number,
     name: string,
     type: Array<string>

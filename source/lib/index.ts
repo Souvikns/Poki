@@ -1,7 +1,7 @@
 import {
     CP,
     Type,
-    Pokemon,
+    _Pokemon,
     PokemonName
 } from './types';
 
@@ -12,7 +12,7 @@ import { Database } from './models/database'
 export {
     CP,
     Type,
-    Pokemon,
+    _Pokemon,
     PokemonName,
     Penalty,
     Database
