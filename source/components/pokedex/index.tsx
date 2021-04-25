@@ -11,6 +11,9 @@ import Search from './search';
 
 const Pokedex: FC<{ flag: any }> = ({ flag }) => {
 
+    if (flag.pokemon) {
+        return <PokemonUI name={flag.pokemon} />
+    }
     let [pos, setPos] = useState(0);
     const pokemonsList = _.chunk(Database.getAllPokemon(), 10);
     let [items, setItems] = useState(pokemonsList[pos]?.map(pokemon => ({ label: pokemon.name, value: pokemon.id })));
@@ -47,14 +50,12 @@ const Pokedex: FC<{ flag: any }> = ({ flag }) => {
             listShift("right");
         }
 
-        if(input === "s" ) {
+        if (input === "s") {
             render(<Search />)
         }
     })
 
-    if (flag.pokemon) {
-        return <PokemonUI name={flag.pokemon} />
-    }
+
 
     return <>
         <SelectInput items={items} onSelect={selectHandler} itemComponent={SelectorItem} />
