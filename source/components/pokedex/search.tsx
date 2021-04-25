@@ -9,8 +9,8 @@ const Search: FC<{}> = () => {
     const pokemons: Array<_Pokemon> = Database.getAllPokemon();
     var [pokemonList, setPokemonList] = useState(Database.getAllPokemon());
 
-
-    const submit = (value: string) => {
+    const onChange = (value: any) => {
+        setQuery(value);
         let reqexStr = "^" + value
         setPokemonList(_.filter(pokemons, pokemon => RegExp(reqexStr, "i").test(pokemon.name)));
     }
@@ -19,10 +19,10 @@ const Search: FC<{}> = () => {
         <Box>
             <Text>Search: </Text>
 
-            <TextInput value={query} onChange={setQuery} onSubmit={submit} />
+            <TextInput value={query} onChange={onChange} />
         </Box>
 
-        {pokemonList.map(pokemon => <Text key={pokemon.id}>{pokemon.name}</Text>)}
+        {(query !== "") && pokemonList.map(pokemon => <Text key={pokemon.id}>{pokemon.name}</Text>)}
     </>
 }
 
