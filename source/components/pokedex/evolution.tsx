@@ -7,9 +7,7 @@ const Evolution: FC<{ evolutions: Array<_Pokemon> }> = ({ evolutions }) => {
     return <Box
         justifyContent="center"
         flexDirection="row"
-        borderStyle="classic"
         padding={1}
-        borderColor="magenta"
         marginLeft={8}
         marginRight={8}
     >
