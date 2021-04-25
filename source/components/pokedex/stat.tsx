@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Box, Text } from 'ink'
-import { getBarCount, getBarColor } from '../utils';
+import { getBarColor, getBar } from '../utils';
 
 const Stat: FC<{
     stats:
@@ -14,20 +14,34 @@ const Stat: FC<{
 }> = ({ stats }) => {
 
 
-    const bar = "█";
 
     return <>
         <Box marginLeft={8} flexDirection="column">
-            <Text><Text bold>HP</Text>: <Text color={getBarColor(stats.hp)}>{bar.repeat(getBarCount(stats.hp))}</Text>  {stats.hp}</Text>
-
-            <Text><Text bold>Attack</Text>: <Text color={getBarColor(stats.attack)}>{bar.repeat(getBarCount(stats.attack))}</Text>  {stats.attack}</Text>
-
-            <Text><Text bold>Defense</Text>: <Text color={getBarColor(stats.defense)}>{bar.repeat(getBarCount(stats.defense))}</Text>  {stats.defense}</Text>
-
-            <Text><Text bold>Special</Text>: <Text color={getBarColor(stats.special)}>{bar.repeat(getBarCount(stats.special))}</Text>  {stats.special}</Text>
-
-            <Text><Text bold>Speed</Text>: <Text color={getBarColor(stats.speed)}>{bar.repeat(getBarCount(stats.speed))}</Text>  {stats.speed}</Text>
-
+            <Box flexDirection="row" >
+                <Box width={10}><Text>HP: </Text></Box>
+                <Box><Text color={getBarColor(stats.hp)}>{getBar(stats.hp)}</Text></Box>
+                <Box><Text> {stats.hp}</Text></Box>
+            </Box>
+            <Box flexDirection="row">
+                <Box width={10}><Text>Attack: </Text></Box>
+                <Box><Text color={getBarColor(stats.attack)}>{getBar(stats.attack)}</Text></Box>
+                <Box><Text> {stats.attack}</Text></Box>
+            </Box>
+            <Box flexDirection="row">
+                <Box width={10}><Text>Defense: </Text></Box>
+                <Box><Text color={getBarColor(stats.defense)}>{getBar(stats.defense)}</Text></Box>
+                <Box><Text> {stats.defense}</Text></Box>
+            </Box>
+            <Box flexDirection="row">
+                <Box width={10}><Text>Special: </Text></Box>
+                <Box><Text color={getBarColor(stats.special)}>{getBar(stats.special)}</Text></Box>
+                <Box><Text> {stats.special}</Text></Box>
+            </Box>
+            <Box flexDirection="row">
+                <Box width={10}><Text>Speed: </Text></Box>
+                <Box><Text color={getBarColor(stats.speed)}>{getBar(stats.speed)}</Text></Box>
+                <Box><Text> {stats.speed}</Text></Box>
+            </Box>
         </Box>
     </>
 }

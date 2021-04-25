@@ -44,8 +44,11 @@ export const getTypeColor = (type: string): string => {
     }
 }
 
-export const getBarCount = (stat: number) => {
-    return Math.round((stat / 400) * 40);
+export const getBar = (stat: number) => {
+
+    const character = "█";
+    let bar = Math.round((stat/400) * 40);
+    return character.repeat(bar) + " ".repeat(40 - bar);
 }
 
 export const getBarColor = (stat: number) => {
