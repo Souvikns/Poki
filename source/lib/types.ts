@@ -6,6 +6,13 @@ export interface _Pokemon {
         base: string,
         evolve: number
     }
+    stat: {
+        hp: number,
+        attack: number,
+        defense: number,
+        special: number,
+        speed: number
+    }
 }
 
 export interface CP {
