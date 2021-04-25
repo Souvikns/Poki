@@ -3,6 +3,7 @@ import { useInput, render } from 'ink'
 import { Database } from '../../lib'
 import _ from 'lodash';
 import SelectInput from 'ink-select-input';
+import SelectorItem from './slectorItem';
 
 // importing components
 import PokemonUI from './pokemon';
@@ -52,7 +53,7 @@ const Pokedex: FC<{ flag: any }> = ({ flag }) => {
 
     return <>
 
-        <SelectInput items={items} onSelect={selectHandler} />
+        <SelectInput items={items} onSelect={selectHandler} itemComponent={SelectorItem} />
     </>
 }
 
