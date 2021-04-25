@@ -18,27 +18,27 @@ const Stat: FC<{
     return <>
         <Box marginLeft={8} flexDirection="column">
             <Box flexDirection="row" >
-                <Box width={10}><Text>HP: </Text></Box>
+                <Box width={10}><Text bold>HP: </Text></Box>
                 <Box><Text color={getBarColor(stats.hp)}>{getBar(stats.hp)}</Text></Box>
                 <Box><Text> {stats.hp}</Text></Box>
             </Box>
             <Box flexDirection="row">
-                <Box width={10}><Text>Attack: </Text></Box>
+                <Box width={10}><Text bold>Attack: </Text></Box>
                 <Box><Text color={getBarColor(stats.attack)}>{getBar(stats.attack)}</Text></Box>
                 <Box><Text> {stats.attack}</Text></Box>
             </Box>
             <Box flexDirection="row">
-                <Box width={10}><Text>Defense: </Text></Box>
+                <Box width={10}><Text bold>Defense: </Text></Box>
                 <Box><Text color={getBarColor(stats.defense)}>{getBar(stats.defense)}</Text></Box>
                 <Box><Text> {stats.defense}</Text></Box>
             </Box>
             <Box flexDirection="row">
-                <Box width={10}><Text>Special: </Text></Box>
+                <Box width={10}><Text bold>Special: </Text></Box>
                 <Box><Text color={getBarColor(stats.special)}>{getBar(stats.special)}</Text></Box>
                 <Box><Text> {stats.special}</Text></Box>
             </Box>
             <Box flexDirection="row">
-                <Box width={10}><Text>Speed: </Text></Box>
+                <Box width={10}><Text bold>Speed: </Text></Box>
                 <Box><Text color={getBarColor(stats.speed)}>{getBar(stats.speed)}</Text></Box>
                 <Box><Text> {stats.speed}</Text></Box>
             </Box>
