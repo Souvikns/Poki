@@ -20,7 +20,6 @@ Poki
         <img src="https://codecov.io/gh/Souvikns/Poki/branch/main/graph/badge.svg?token=FYklvhHRMn"/>
  </a>
 
-
 </p>
 </h1>
 
