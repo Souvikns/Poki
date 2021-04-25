@@ -8,6 +8,7 @@ import Gradient from 'ink-gradient';
 import Err from './error';
 import Type from './type';
 import Evolution from './evolution';
+import Stat from './stat';
 
 const PokemonUI: FC<{ name: string }> = ({ name }) => {
 
@@ -29,6 +30,10 @@ const PokemonUI: FC<{ name: string }> = ({ name }) => {
             <Box marginRight={8} marginLeft={8}>
                 <Type types={pokemon.type} />
             </Box>
+
+            <Newline />
+
+            <Stat stats={pokemon.stat} />
 
             <Newline />
 

@@ -1,7 +1,7 @@
-import {Type} from '../lib'
+import { Type } from '../lib'
 
 export const getTypeColor = (type: string): string => {
-    switch(type){
+    switch (type) {
         case Type.normal:
             return "#A8A878"
         case Type.fighting:
@@ -42,4 +42,15 @@ export const getTypeColor = (type: string): string => {
         default:
             return ""
     }
+}
+
+export const getBarCount = (stat: number) => {
+    return Math.round((stat / 400) * 40);
+}
+
+export const getBarColor = (stat: number) => {
+    if(stat <= 20) return "#F34444";
+    if(stat > 20 && stat < 60) return "#FF7F0F";
+    if(stat >= 60 && stat < 100) return "#FFDD57"
+    return "#A0E515";
 }
