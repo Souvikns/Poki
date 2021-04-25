@@ -3,10 +3,11 @@ import { useInput, render } from 'ink'
 import { Database } from '../../lib'
 import _ from 'lodash';
 import SelectInput from 'ink-select-input';
-import SelectorItem from './slectorItem';
 
 // importing components
 import PokemonUI from './pokemon';
+import SelectorItem from './slectorItem';
+import Search from './search';
 
 const Pokedex: FC<{ flag: any }> = ({ flag }) => {
 
@@ -38,12 +39,16 @@ const Pokedex: FC<{ flag: any }> = ({ flag }) => {
     }
 
 
-    useInput((_input, key) => {
+    useInput((input, key) => {
         if (key.leftArrow) {
             listShift("left");
         }
         if (key.rightArrow) {
             listShift("right");
+        }
+
+        if(input === "s" ) {
+            render(<Search />)
         }
     })
 
@@ -52,7 +57,6 @@ const Pokedex: FC<{ flag: any }> = ({ flag }) => {
     }
 
     return <>
-
         <SelectInput items={items} onSelect={selectHandler} itemComponent={SelectorItem} />
     </>
 }
