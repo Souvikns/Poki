@@ -5,7 +5,7 @@ import { Database, _Pokemon } from '../../lib';
 import _ from 'lodash';
 import SelectInput from 'ink-select-input';
 
-// importing custom components 
+// importing custom components
 import Pokemon from './pokemon';
 import SelectorItem from './slectorItem';
 
