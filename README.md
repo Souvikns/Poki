@@ -16,11 +16,10 @@ Poki
 <img src="https://github.com/Tech-Phantoms/pokemon-cli-game/actions/workflows/node.js.yml/badge.svg" alt="Node.js CI">
 </a>
 
-
 <a href="https://codecov.io/gh/Souvikns/Poki">
         <img src="https://codecov.io/gh/Souvikns/Poki/branch/main/graph/badge.svg?token=FYklvhHRMn"/>
  </a>
-    
+
 
 </p>
 </h1>
