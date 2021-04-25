@@ -1,6 +1,6 @@
-import { Pokemon, PokemonName, Type } from '../types';
+import { _Pokemon, PokemonName, Type } from '../types';
 
-export const PokemonData: Array<Pokemon> = [
+export const PokemonData: Array<_Pokemon> = [
     {
         id: 0,
         name: PokemonName.bulbasaur,

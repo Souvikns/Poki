@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Box, Newline } from 'ink'
-import { Database, Pokemon } from '../../lib'
+import { Database, _Pokemon } from '../../lib'
 import BigText from 'ink-big-text';
 import Gradient from 'ink-gradient';
 
@@ -11,7 +11,7 @@ import Evolution from './evolution';
 
 const PokemonUI: FC<{ name: string }> = ({ name }) => {
 
-    let pokemon: Pokemon | undefined = Database.getPokemon(name);
+    let pokemon: _Pokemon | undefined = Database.getPokemon(name);
 
     if (typeof pokemon === "undefined") {
         return <Err pokemonName={name} />
