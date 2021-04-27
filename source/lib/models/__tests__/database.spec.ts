@@ -3,7 +3,7 @@ import { Database } from '../database';
 describe("database class should", () => {
     test("return evolutions of a pokemon", () => {
         let evolution = Database.getEvolution("Bulbasaur");
-        expect(evolution.length).toEqual(3);
+        expect(evolution.length).toBeLessThanOrEqual(151);
     })
 
     test("return the evolution object for every pokemon", () => {
