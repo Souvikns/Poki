@@ -48,5 +48,53 @@ export const PokemonData: Array<_Pokemon> = [
             special: 100,
             speed: 80,
         }
+    },
+    {
+        id: 3,
+        name: PokemonName.charmander,
+        type: [Type.fire],
+        evolution: {
+            base: PokemonName.charmander,
+            evolve: 0
+        },
+        stat: {
+            hp: 39,
+            attack: 52,
+            defense: 43,
+            special: 60,
+            speed: 65
+        }
+    },
+    {
+        id: 4,
+        name: PokemonName.charmeleon,
+        type: [Type.fire],
+        evolution: {
+            base: PokemonName.charmander,
+            evolve: 1
+        },
+        stat: {
+            hp: 58,
+            attack: 64,
+            defense: 58,
+            special: 80,
+            speed: 80
+        }
+    },
+    {
+        id: 5,
+        name: PokemonName.charizard,
+        type: [Type.fire, Type.flying],
+        evolution: {
+            base: PokemonName.charmander,
+            evolve: 2,
+        },
+        stat: {
+            hp: 78,
+            attack: 84,
+            defense: 78,
+            special: 109,
+            speed: 100
+        }
     }
 ]
