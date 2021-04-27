@@ -127,7 +127,7 @@ export const PokemonData: Array<_Pokemon> = [
             special: 65,
             speed:  58
         }
-    }, 
+    },
     {
         id: 8,
         name: PokemonName.blastoise,
