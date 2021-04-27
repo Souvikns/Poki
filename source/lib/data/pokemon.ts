@@ -143,5 +143,53 @@ export const PokemonData: Array<_Pokemon> = [
             special: 85,
             speed: 78
         }
+    },
+    {
+        id: 9,
+        name: PokemonName.caterpie,
+        type: [Type.bug],
+        evolution: {
+            base: PokemonName.caterpie,
+            evolve: 0
+        },
+        stat: {
+            hp: 45,
+            attack: 30,
+            defense: 35,
+            special: 20,
+            speed: 45
+        }
+    },
+    {
+        id: 10,
+        name: PokemonName.metapod,
+        type: [Type.bug],
+        evolution: {
+            base: PokemonName.caterpie,
+            evolve: 1
+        },
+        stat: {
+            hp: 50,
+            attack: 20,
+            defense: 55,
+            special: 25,
+            speed: 30
+        }
+    },
+    {
+        id: 11,
+        name: PokemonName.butterfree,
+        type: [Type.bug, Type.flying],
+        evolution: {
+            base: PokemonName.caterpie,
+            evolve: 2
+        },
+        stat: {
+            hp: 60,
+            attack: 45,
+            defense: 50,
+            special: 90,
+            speed: 70
+        }
     }
 ]
