@@ -44,10 +44,10 @@ const Pokedex: FC<{ flag: any }> = ({ flag }) => {
 
     useInput((input, key) => {
         if (key.leftArrow) {
-            listShift("left");
+            listShift("right");
         }
         if (key.rightArrow) {
-            listShift("right");
+            listShift("left");
         }
 
         if (input === "s") {
