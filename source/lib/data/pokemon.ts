@@ -96,5 +96,52 @@ export const PokemonData: Array<_Pokemon> = [
             special: 109,
             speed: 100
         }
+    }, {
+        id: 6,
+        name: PokemonName.squirtle,
+        type: [Type.water],
+        evolution: {
+            base: PokemonName.squirtle,
+            evolve: 0
+        },
+        stat: {
+            hp: 44,
+            attack: 48,
+            defense: 65,
+            special: 50,
+            speed: 43
+        }
+    },
+    {
+        id: 7,
+        name: PokemonName.wartortle,
+        type: [Type.water],
+        evolution: {
+            base: PokemonName.squirtle,
+            evolve: 1
+        },
+        stat: {
+            hp: 59,
+            attack: 63,
+            defense: 80,
+            special: 65,
+            speed:  58
+        }
+    }, 
+    {
+        id: 8,
+        name: PokemonName.blastoise,
+        type: [Type.water],
+        evolution: {
+            base: PokemonName.squirtle,
+            evolve: 2
+        },
+        stat: {
+            hp: 79,
+            attack: 83,
+            defense: 100,
+            special: 85,
+            speed: 78
+        }
     }
 ]
