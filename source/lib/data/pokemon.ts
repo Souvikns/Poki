@@ -125,7 +125,7 @@ export const PokemonData: Array<_Pokemon> = [
             attack: 63,
             defense: 80,
             special: 65,
-            speed:  58
+            speed: 58
         }
     },
     {
@@ -190,6 +190,134 @@ export const PokemonData: Array<_Pokemon> = [
             defense: 50,
             special: 90,
             speed: 70
+        }
+    },
+    {
+        id: 12,
+        name: PokemonName.weedle,
+        type: [Type.bug, Type.poison],
+        evolution: {
+            base: PokemonName.weedle,
+            evolve: 0
+        },
+        stat: {
+            hp: 40,
+            attack: 35,
+            defense: 30,
+            special: 20,
+            speed: 50
+        }
+    },
+    {
+        id: 13,
+        name: PokemonName.kakuna,
+        type: [Type.bug, Type.poison],
+        evolution: {
+            base: PokemonName.weedle,
+            evolve: 1
+        },
+        stat: {
+            hp: 45,
+            attack: 25,
+            defense: 50,
+            special: 25,
+            speed: 35
+        }
+    },
+    {
+        id: 14,
+        name: PokemonName.beedrill,
+        type: [Type.bug, Type.poison],
+        evolution: {
+            base: PokemonName.weedle,
+            evolve: 2
+        },
+        stat: {
+            hp: 65,
+            attack: 90,
+            defense: 40,
+            special: 45,
+            speed: 75
+        }
+    },
+    {
+        id: 15,
+        name: PokemonName.pidgey,
+        type: [Type.normal, Type.flying],
+        evolution: {
+            base: PokemonName.pidgey,
+            evolve: 0
+        },
+        stat: {
+            hp: 40,
+            attack: 45,
+            defense: 40,
+            special: 35,
+            speed: 56
+        }
+    },
+    {
+        id: 16,
+        name: PokemonName.pidgeotto,
+        type: [Type.normal, Type.flying],
+        evolution: {
+            base: PokemonName.pidgey,
+            evolve: 1
+        },
+        stat: {
+            hp: 63,
+            attack: 60,
+            defense: 55,
+            special: 50,
+            speed: 71
+        }
+    },
+    {
+        id: 17,
+        name: PokemonName.pidgeot,
+        type: [Type.normal, Type.flying],
+        evolution: {
+            base: PokemonName.pidgey,
+            evolve: 2
+        },
+        stat: {
+            hp: 83,
+            attack: 80,
+            defense: 75,
+            special: 70,
+            speed: 101
+        }
+    },
+    {
+        id: 18,
+        name: PokemonName.rattata,
+        type: [Type.normal],
+        evolution: {
+            base: PokemonName.rattata,
+            evolve: 0
+        },
+        stat: {
+            hp: 30,
+            attack: 56,
+            defense: 35,
+            special: 25,
+            speed: 72
+        }
+    },
+    {
+        id: 19,
+        name: PokemonName.raticate,
+        type: [Type.normal],
+        evolution: {
+            base: PokemonName.rattata,
+            evolve: 1
+        },
+        stat: {
+            hp: 55,
+            attack: 81,
+            defense: 60,
+            special: 50,
+            speed: 97
         }
     }
 ]
