@@ -287,5 +287,37 @@ export const PokemonData: Array<_Pokemon> = [
             special: 70,
             speed: 101
         }
+    },
+    {
+        id: 18,
+        name: PokemonName.rattata,
+        type: [Type.normal],
+        evolution: {
+            base: PokemonName.rattata,
+            evolve: 0
+        },
+        stat: {
+            hp: 30,
+            attack: 56,
+            defense: 35,
+            special: 25,
+            speed: 72
+        }
+    },
+    {
+        id: 19,
+        name: PokemonName.raticate,
+        type: [Type.normal],
+        evolution: {
+            base: PokemonName.rattata,
+            evolve: 1
+        },
+        stat: {
+            hp: 55,
+            attack: 81,
+            defense: 60,
+            special: 50,
+            speed: 97
+        }
     }
 ]
