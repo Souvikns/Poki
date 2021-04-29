@@ -191,5 +191,53 @@ export const PokemonData: Array<_Pokemon> = [
             special: 90,
             speed: 70
         }
+    },
+    {
+        id: 12,
+        name: PokemonName.weedle,
+        type: [Type.bug, Type.poison],
+        evolution: {
+            base: PokemonName.weedle,
+            evolve: 0
+        },
+        stat: {
+            hp: 40,
+            attack: 35,
+            defense: 30,
+            special: 20,
+            speed: 50
+        }
+    },
+    {
+        id: 13,
+        name: PokemonName.kakuna,
+        type: [Type.bug, Type.poison],
+        evolution: {
+            base: PokemonName.weedle,
+            evolve: 1
+        },
+        stat: {
+            hp: 45,
+            attack: 25,
+            defense: 50,
+            special: 25,
+            speed: 35
+        }
+    },
+    {
+        id: 14,
+        name: PokemonName.beedrill,
+        type: [Type.bug, Type.poison],
+        evolution: {
+            base: PokemonName.weedle,
+            evolve: 2
+        },
+        stat: {
+            hp: 65,
+            attack: 90,
+            defense: 40,
+            special: 45,
+            speed: 75
+        }
     }
 ]
