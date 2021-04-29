@@ -125,7 +125,7 @@ export const PokemonData: Array<_Pokemon> = [
             attack: 63,
             defense: 80,
             special: 65,
-            speed:  58
+            speed: 58
         }
     },
     {
@@ -238,6 +238,54 @@ export const PokemonData: Array<_Pokemon> = [
             defense: 40,
             special: 45,
             speed: 75
+        }
+    },
+    {
+        id: 15,
+        name: PokemonName.pidgey,
+        type: [Type.normal, Type.flying],
+        evolution: {
+            base: PokemonName.pidgey,
+            evolve: 0
+        },
+        stat: {
+            hp: 40,
+            attack: 45,
+            defense: 40,
+            special: 35,
+            speed: 56
+        }
+    },
+    {
+        id: 16,
+        name: PokemonName.pidgeotto,
+        type: [Type.normal, Type.flying],
+        evolution: {
+            base: PokemonName.pidgey,
+            evolve: 1
+        },
+        stat: {
+            hp: 63,
+            attack: 60,
+            defense: 55,
+            special: 50,
+            speed: 71
+        }
+    },
+    {
+        id: 17,
+        name: PokemonName.pidgeot,
+        type: [Type.normal, Type.flying],
+        evolution: {
+            base: PokemonName.pidgey,
+            evolve: 2
+        },
+        stat: {
+            hp: 83,
+            attack: 80,
+            defense: 75,
+            special: 70,
+            speed: 101
         }
     }
 ]
