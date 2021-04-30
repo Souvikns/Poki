@@ -37,7 +37,7 @@ const PokemonUI: FC<{ name: string }> = ({ name }) => {
 
             <Newline />
 
-            <Evolution evolutions={Database.getEvolution(pokemon.name)} />
+            <Evolution evolutions={Database.getEvolution(pokemon.name)} name={pokemon.name} />
 
 
         </Box>
