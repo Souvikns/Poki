@@ -2,7 +2,7 @@
 Poki
 <br> <br>
 <p>
-<img src="./static/pokeball.svg" width="100">
+<img src="static/pokeball.svg" width="100">
 </p>
 
 <p>
@@ -51,4 +51,4 @@ If you want to install it locally, Just remove the -g flag.
 To start using Poki type command `poki` or `poki --help` which will give help
 for all the commands and options.
 
-![help screenshot](./static/ss.PNG)
+![help screenshot](static/ss.PNG)
