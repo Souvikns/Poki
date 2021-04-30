@@ -1,6 +1,6 @@
 {
 	"name": "poki",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"license": "MIT",
 	"bin": "dist/cli.js",
 	"engines": {
@@ -14,7 +14,8 @@
 		"test:watch": "jest --watch"
 	},
 	"files": [
-		"dist/"
+		"dist/",
+		"static/"
 	],
 	"dependencies": {
 		"@asyncapi/parser": "^1.4.5",
