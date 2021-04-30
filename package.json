@@ -4,6 +4,11 @@
 	"license": "MIT",
 	"bin": "dist/cli.js",
 	"types": "dist/cli.d.ts",
+	"author": {
+		"name": "Souvik De",
+		"email": "souvikde.ns@gmail.com",
+		"url": "https://github.com/Souvikns"
+	},
 	"engines": {
 		"node": ">=10"
 	},
