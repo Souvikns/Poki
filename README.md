@@ -2,7 +2,7 @@
 Poki
 <br> <br>
 <p>
-<img src="static/pokeball.svg" width="100">
+<img src="https://github.com/Souvikns/Poki/blob/main/static/pokeball.svg"  width="100">
 </p>
 
 <p>
