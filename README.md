@@ -1,11 +1,11 @@
 <h1 align="center">
 Poki
 <br> <br>
-<p>
+<p align="center">
 <img src="https://github.com/Souvikns/Poki/blob/main/static/pokeball.svg"  width="100">
 </p>
 
-<p>
+<p align="center">
 <a href="https://github.com/Tech-Phantoms/pokemon-cli-game/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Tech-Phantoms/pokemon-cli-game"></a>
 
 <a href="https://github.com/Tech-Phantoms/pokemon-cli-game/pulls">
