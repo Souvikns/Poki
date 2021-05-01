@@ -1,12 +1,13 @@
 <h1 align="center">
 Poki
 <br> <br>
-<p>
+<p align="center">
 <img src="https://github.com/Souvikns/Poki/blob/main/static/pokeball.svg"  width="100">
 </p>
 
-<p>
-<a href="https://github.com/Souvikns/Poki/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Souvikns/Poki"></a>
+<p align="center">
+ <a href="https://github.com/Souvikns/Poki/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Souvikns/Poki"></a>
+
 
 <a href="https://github.com/Souvikns/Poki/pulls">
 <img src="https://img.shields.io/badge/PRs-open-green">
