@@ -8,7 +8,6 @@ Poki
 <p align="center">
  <a href="https://github.com/Souvikns/Poki/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Souvikns/Poki"></a>
 
-
 <a href="https://github.com/Souvikns/Poki/pulls">
 <img src="https://img.shields.io/badge/PRs-open-green">
 </a>
