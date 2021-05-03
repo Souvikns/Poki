@@ -29,10 +29,10 @@ Poki
 
 
 <!-- vscode-markdown-toc -->
-* 1. [Introduction](#introduction)
-* 2. [Getting started](#getting-started)
-        * 2.1. [Installation](#installation)
-* 3. [Usage](#usage)
+-  [Introduction](#introduction)
+-  [Getting started](#getting-started)
+   - [Installation](#installation)
+-  [Usage](#usage)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
