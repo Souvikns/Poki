@@ -27,16 +27,29 @@ Poki
 
 > Work in progress
 
-## Introduction
+<!-- vscode-markdown-toc -->
+
+- [Introduction](#introduction)
+- [Getting started](#getting-started)
+  - [Installation](#installation)
+- [Usage](#usage)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
+## 1. <a name='introduction'></a>Introduction
 
 A fun multiplayer turn based Pokémon cli game.
 
-## Getting started
+## 2. <a name='getting-started'></a>Getting started
 
 To run Poki, ensure that you have Node.js >=10.
 [Install node.js from here.](https://nodejs.org/en/)
 
-### Installation
+### 2.1. <a name='installation'></a>Installation
 
 The easiest way to install Poki is using NPM. If you have Node.js installed, it
 is most likely that you have NPM installed as well
@@ -48,7 +61,7 @@ $ npm install -g poki
 This installs Poki globally on your system allowing you to run it from anywhere.
 If you want to install it locally, Just remove the -g flag.
 
-## Usage
+## 3. <a name='usage'></a>Usage
 
 To start using Poki type command `poki` or `poki --help` which will give help
 for all the commands and options.
