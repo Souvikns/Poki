@@ -27,16 +27,19 @@ Poki
 
 > Work in progress
 
-## Introduction
+<!-- TOC -->autoauto- [0.1. Introduction](#01-introduction)auto- [0.2. Getting started](#02-getting-started)auto    - [0.2.1. Installation](#021-installation)auto- [0.3. Usage](#03-usage)autoauto
+<!-- /TOC -->
+
+## 0.1. Introduction
 
 A fun multiplayer turn based Pokémon cli game.
 
-## Getting started
+## 0.2. Getting started
 
 To run Poki, ensure that you have Node.js >=10.
 [Install node.js from here.](https://nodejs.org/en/)
 
-### Installation
+### 0.2.1. Installation
 
 The easiest way to install Poki is using NPM. If you have Node.js installed, it
 is most likely that you have NPM installed as well
@@ -48,7 +51,7 @@ $ npm install -g poki
 This installs Poki globally on your system allowing you to run it from anywhere.
 If you want to install it locally, Just remove the -g flag.
 
-## Usage
+## 0.3. Usage
 
 To start using Poki type command `poki` or `poki --help` which will give help
 for all the commands and options.
