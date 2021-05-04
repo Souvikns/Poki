@@ -39,7 +39,10 @@ Poki is a command-line pokemon game, heavily influenced by pokemon red. We will 
 	- [using poki as library](#using-poki-as-a-library)
 - [Game Commands](#game-commands)
 	- [`pokedex`](#pokedex)
- 
+	- [`catch`](#catch)
+	- [`battle`](#battle)
+	- [`profile`](#profile)
+- [Api Reference](#api-reference) 
 
 ## Getting Started
 
@@ -89,3 +92,26 @@ To access the search bar press `s` then start typing the pokemon name you want s
 - `-p, --pokemon <name>` pass in the pokemon name to search 
 - `-h, --help` display help for command
 
+[back to top](#table-of-contents)
+
+### `catch`
+
+> under development
+
+[back to top](#table-of-contents)
+### `battle` 
+
+> under development
+[back to top](#table-of-contents)
+### `profile`
+
+> under development
+
+[back to top](#table-of-contents)
+
+
+## Api Reference
+
+> under development 
+
+[back to top](#table-of-contents)
