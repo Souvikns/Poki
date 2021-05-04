@@ -27,29 +27,26 @@ Poki
 
 > Work in progress
 
-<!-- vscode-markdown-toc -->
+## Poki 
+Poki is a command-line pokemon game, heavily influenced by pokemon red. We will also seperate the game logic so that it could be used as a library. 
 
-- [Introduction](#introduction)
-- [Getting started](#getting-started)
-  - [Installation](#installation)
+## Table of Contents
+
+- [Getting Started](#getting-started)
+	- [Installation](#installation)
 - [Usage](#usage)
+	- [using poki cli](#using-poki-cli)
+	- [using poki as library](#using-poki-as-a-library)
+- [Game Commands](#game-commands)
+	- [`pokedex`](#pokedex)
+ 
 
-<!-- vscode-markdown-toc-config
-	numbering=true
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
-
-## 1. <a name='introduction'></a>Introduction
-
-A fun multiplayer turn based Pokémon cli game.
-
-## 2. <a name='getting-started'></a>Getting started
+## Getting Started
 
 To run Poki, ensure that you have Node.js >=10.
 [Install node.js from here.](https://nodejs.org/en/)
 
-### 2.1. <a name='installation'></a>Installation
+### Installation
 
 The easiest way to install Poki is using NPM. If you have Node.js installed, it
 is most likely that you have NPM installed as well
@@ -61,9 +58,34 @@ $ npm install -g poki
 This installs Poki globally on your system allowing you to run it from anywhere.
 If you want to install it locally, Just remove the -g flag.
 
-## 3. <a name='usage'></a>Usage
+[back to top](#table-of-contents)
 
-To start using Poki type command `poki` or `poki --help` which will give help
-for all the commands and options.
+## Usage
 
-<img src="https://github.com/Souvikns/Poki/blob/main/static/ss.PNG" width="750" />
+### Using Poki CLI
+
+You can play the game using the CLI. If you have installed poki globally open any terminal of your liking and check the command list 
+```
+$ poki --help 
+```
+
+<img src="https://github.com/Souvikns/Poki/blob/main/static/ss.PNG" width="650" />
+
+### Using Poki as a Library
+> curretly you cant use poki as a library.
+
+[back to top](#table-of-contents)
+
+## Game Commands
+
+### `pokedex`
+Use this command to get information about pokemons currently in the game. This command prints 10 pokemons at a time, you can use `arrow keys` to navigate and `enter` to select. 
+
+To access the search bar press `s` then start typing the pokemon name you want search
+
+<img src="https://github.com/Souvikns/Poki/blob/main/static/searchbar.PNG" width="300" />
+
+#### options 
+- `-p, --pokemon <name>` pass in the pokemon name to search 
+- `-h, --help` display help for command
+
