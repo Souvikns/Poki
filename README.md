@@ -27,22 +27,24 @@ Poki
 
 > Work in progress
 
-## Poki 
-Poki is a command-line pokemon game, heavily influenced by pokemon red. We will also seperate the game logic so that it could be used as a library. 
+## Poki
+
+Poki is a command-line pokemon game, heavily influenced by pokemon red. We will
+also seperate the game logic so that it could be used as a library.
 
 ## Table of Contents
 
 - [Getting Started](#getting-started)
-	- [Installation](#installation)
+  - [Installation](#installation)
 - [Usage](#usage)
-	- [using poki cli](#using-poki-cli)
-	- [using poki as library](#using-poki-as-a-library)
+  - [using poki cli](#using-poki-cli)
+  - [using poki as library](#using-poki-as-a-library)
 - [Game Commands](#game-commands)
-	- [`pokedex`](#pokedex)
-	- [`catch`](#catch)
-	- [`battle`](#battle)
-	- [`profile`](#profile)
-- [Api Reference](#api-reference) 
+  - [`pokedex`](#pokedex)
+  - [`catch`](#catch)
+  - [`battle`](#battle)
+  - [`profile`](#profile)
+- [Api Reference](#api-reference)
 
 ## Getting Started
 
@@ -67,14 +69,17 @@ If you want to install it locally, Just remove the -g flag.
 
 ### Using Poki CLI
 
-You can play the game using the CLI. If you have installed poki globally open any terminal of your liking and check the command list 
+You can play the game using the CLI. If you have installed poki globally open
+any terminal of your liking and check the command list
+
 ```
-$ poki --help 
+$ poki --help
 ```
 
 <img src="https://github.com/Souvikns/Poki/blob/main/static/ss.PNG" width="650" />
 
 ### Using Poki as a Library
+
 > curretly you cant use poki as a library.
 
 [back to top](#table-of-contents)
@@ -82,14 +87,19 @@ $ poki --help
 ## Game Commands
 
 ### `pokedex`
-Use this command to get information about pokemons currently in the game. This command prints 10 pokemons at a time, you can use `arrow keys` to navigate and `enter` to select. 
 
-To access the search bar press `s` then start typing the pokemon name you want search
+Use this command to get information about pokemons currently in the game. This
+command prints 10 pokemons at a time, you can use `arrow keys` to navigate and
+`enter` to select.
+
+To access the search bar press `s` then start typing the pokemon name you want
+search
 
 <img src="https://github.com/Souvikns/Poki/blob/main/static/searchbar.PNG" width="300" />
 
-#### options 
-- `-p, --pokemon <name>` pass in the pokemon name to search 
+#### options
+
+- `-p, --pokemon <name>` pass in the pokemon name to search
 - `-h, --help` display help for command
 
 [back to top](#table-of-contents)
@@ -99,19 +109,19 @@ To access the search bar press `s` then start typing the pokemon name you want s
 > under development
 
 [back to top](#table-of-contents)
-### `battle` 
 
-> under development
-[back to top](#table-of-contents)
+### `battle`
+
+> under development [back to top](#table-of-contents)
+
 ### `profile`
 
 > under development
 
 [back to top](#table-of-contents)
 
-
 ## Api Reference
 
-> under development 
+> under development
 
 [back to top](#table-of-contents)
