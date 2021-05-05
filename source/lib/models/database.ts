@@ -1,4 +1,4 @@
-import { PokemonData } from '../data/pokemon'
+import { PokemonData } from '../data'
 import _ from 'lodash';
 
 export class Database {
