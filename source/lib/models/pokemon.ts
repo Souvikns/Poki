@@ -1,10 +1,10 @@
 /**
- * Pokemon class represent a single pokemon. 
- * There are two different types of pokemon representation 
+ * Pokemon class represent a single pokemon.
+ * There are two different types of pokemon representation
  * - one for game data
  * - for battle
- * 
- * Game data will have baseStat, type, name, id, spriteImage, evolution 
+ *
+ * Game data will have baseStat, type, name, id, spriteImage, evolution
  * Battle Data will have id, name, type, baseStat, stat, level, evolution , spriteImage
  */
 
@@ -70,7 +70,7 @@ export class Pokemon {
     }
 
     static loadForBattle(id: number, level: number, name?: string) {
-        //TODO: read the pokemon from the database and then return that single 
+        //TODO: read the pokemon from the database and then return that single
         let pokemon = _.find(pokemonData, pokemon => pokemon.id === id);
 
         if (!pokemon) throw new Error("Incorrect Id");
