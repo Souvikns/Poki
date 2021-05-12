@@ -8,7 +8,8 @@ const Stat: FC<{
         hp: number,
         attack: number,
         defense: number,
-        special: number,
+        specialAttack: number,
+        specialDefence: number,
         speed: number
     }
 }> = ({ stats }) => {
@@ -33,9 +34,9 @@ const Stat: FC<{
                 <Box><Text> {stats.defense}</Text></Box>
             </Box>
             <Box flexDirection="row">
-                <Box width={10}><Text bold>Special: </Text></Box>
-                <Box><Text color={getBarColor(stats.special)}>{getBar(stats.special)}</Text></Box>
-                <Box><Text> {stats.special}</Text></Box>
+                <Box width={10}><Text bold>Special Attack: </Text></Box>
+                <Box><Text color={getBarColor(stats.specialAttack)}>{getBar(stats.specialAttack)}</Text></Box>
+                <Box><Text> {stats.specialAttack}</Text></Box>
             </Box>
             <Box flexDirection="row">
                 <Box width={10}><Text bold>Speed: </Text></Box>

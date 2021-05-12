@@ -127,4 +127,16 @@ export class Pokemon {
             baseStat: this._baseStat
         };
     }
+
+    get evolutionList(): Array<Pokemon> {
+        let evolutions = _.filter(pokemonData, pokemon => pokemon.evolution.base === this.evolution.base);
+        return _.sortBy(evolutions, pokemon => pokemon.evolution.evolve).map(pk => new Pokemon({
+            id: pk.id,
+            name: pk.name,
+            type: pk.type,
+            evolution: pk.evolution,
+            baseStat: pk.baseStat,
+            spriteImage: getPokemonSprite(pk.id)
+        }));
+    }
 }

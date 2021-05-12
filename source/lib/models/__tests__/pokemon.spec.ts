@@ -37,10 +37,15 @@ describe("Pokemon class", () => {
 
     it("Should throw error", () => {
         try {
-           let pokemon = Pokemon.loadForBattle(10, 3); 
-           expect(typeof pokemon === "undefined").toBeTruthy();
+            let pokemon = Pokemon.loadForBattle(10, 3);
+            expect(typeof pokemon === "undefined").toBeTruthy();
         } catch (error) {
             expect(error).toBeTruthy();
         }
+    })
+
+    it("Should get evolutionList", () => {
+        let pokemon = Pokemon.loadForBattle(1, 2);
+        expect(pokemon.evolutionList).toBeTruthy();
     })
 })

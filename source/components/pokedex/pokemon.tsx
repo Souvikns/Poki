@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Box, Newline } from 'ink'
-import { Database, _Pokemon } from '../../lib'
+import Game from '../../lib'
 import BigText from 'ink-big-text';
 import Gradient from 'ink-gradient';
 
@@ -10,9 +10,11 @@ import Type from './type';
 import Evolution from './evolution';
 import Stat from './stat';
 
+let game = new Game();
+
 const PokemonUI: FC<{ name: string }> = ({ name }) => {
 
-    let pokemon: _Pokemon | undefined = Database.getPokemon(name);
+    let pokemon = game.getPokemonStat(name);
 
     if (typeof pokemon === "undefined") {
         return <Err pokemonName={name} />
@@ -33,11 +35,11 @@ const PokemonUI: FC<{ name: string }> = ({ name }) => {
 
             <Newline />
 
-            <Stat stats={pokemon.stat} />
+            <Stat stats={pokemon.baseStat} />
 
             <Newline />
 
-            <Evolution evolutions={Database.getEvolution(pokemon.name)} name={pokemon.name} />
+            <Evolution evolutions={pokemon.evolutionList} name={pokemon.name} />
 
 
         </Box>
