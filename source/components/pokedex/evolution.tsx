@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import { _Pokemon } from '../../lib';
+import { Pokemon } from '../../lib';
 import { Box, Text } from 'ink';
 
-const Evolution: FC<{ evolutions: Array<_Pokemon>, name: string }> = ({ evolutions, name }) => {
+const Evolution: FC<{ evolutions: Array<Pokemon>, name: string }> = ({ evolutions, name }) => {
 
     return <Box
         justifyContent="center"

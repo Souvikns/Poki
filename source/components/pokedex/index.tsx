@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 import { useInput, render } from 'ink'
-import { Database } from '../../lib'
+import Game from '../../lib'
 import _ from 'lodash';
 import SelectInput from 'ink-select-input';
 
@@ -9,13 +9,15 @@ import PokemonUI from './pokemon';
 import SelectorItem from './slectorItem';
 import Search from './search';
 
+let game = new Game();
+
 const Pokedex: FC<{ flag: any }> = ({ flag }) => {
 
     if (flag.pokemon) {
         return <PokemonUI name={flag.pokemon} />
     }
     let [pos, setPos] = useState(0);
-    const pokemonsList = _.chunk(Database.getAllPokemon(), 10);
+    const pokemonsList = _.chunk(game.pokemonData, 10);
     let [items, setItems] = useState(pokemonsList[pos]?.map(pokemon => ({ label: pokemon.name, value: pokemon.id })));
 
     const selectHandler = (item: any) => {
