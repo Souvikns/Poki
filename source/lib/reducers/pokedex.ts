@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { pokemonData, getPokemonSprite, getEvolutionList } from '../data'
 
-export const Pokedex = createSlice({
+export const PokedexSlice = createSlice({
     name: "pokedex",
     initialState: {
         pokemons: [...pokemonData.map(pokemon => ({
