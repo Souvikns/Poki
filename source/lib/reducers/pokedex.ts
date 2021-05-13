@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { pokemonData, getPokemonSprite, getEvolutionList } from '../data'
 
-const Pokedex = createSlice({
+export const Pokedex = createSlice({
     name: "pokedex",
     initialState: {
         pokemons: [...pokemonData.map(pokemon => ({
@@ -15,5 +15,3 @@ const Pokedex = createSlice({
     },
     reducers: {}
 });
-
-export default Pokedex.reducer;
