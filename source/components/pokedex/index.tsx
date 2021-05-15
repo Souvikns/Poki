@@ -3,6 +3,7 @@ import { useInput, render } from 'ink'
 import Game from '../../lib'
 import _ from 'lodash';
 import SelectInput from 'ink-select-input';
+import { useSelector } from 'react-redux';
 
 // importing components
 import PokemonUI from './pokemon';
@@ -19,7 +20,7 @@ const Pokedex: FC<{ flag: any }> = ({ flag }) => {
     let [pos, setPos] = useState(0);
     const pokemonsList = _.chunk(game.pokemonData, 10);
     let [items, setItems] = useState(pokemonsList[pos]?.map(pokemon => ({ label: pokemon.name, value: pokemon.id })));
-
+    
     const selectHandler = (item: any) => {
         render(<PokemonUI name={item.label} />)
     }
