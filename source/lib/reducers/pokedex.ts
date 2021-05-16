@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { pokemonData, getPokemonSprite, getEvolutionList } from '../data'
+import { PokedexInitalState } from '../types'
 
 export const PokedexSlice = createSlice({
     name: "pokedex",
@@ -12,6 +13,6 @@ export const PokedexSlice = createSlice({
             spriteImage: getPokemonSprite(pokemon.id),
             evolution: getEvolutionList(pokemon.evolution.base)
         }))]
-    },
+    } as PokedexInitalState,
     reducers: {}
 });

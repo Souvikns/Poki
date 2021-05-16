@@ -1,4 +1,4 @@
-import { Type } from '../lib'
+import { Type } from '../lib/types'
 
 export const getTypeColor = (type: string): string => {
     switch (type) {

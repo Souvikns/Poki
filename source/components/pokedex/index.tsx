@@ -1,16 +1,14 @@
 import React, { FC, useState } from 'react';
 import { useInput, render } from 'ink'
-import Game from '../../lib'
 import _ from 'lodash';
 import SelectInput from 'ink-select-input';
 import { useSelector } from 'react-redux';
+import { PokedexInitalState } from '../../lib/types';
 
 // importing components
 import PokemonUI from './pokemon';
 import SelectorItem from './slectorItem';
 import Search from './search';
-
-let game = new Game();
 
 const Pokedex: FC<{ flag: any }> = ({ flag }) => {
 
@@ -18,9 +16,11 @@ const Pokedex: FC<{ flag: any }> = ({ flag }) => {
         return <PokemonUI name={flag.pokemon} />
     }
     let [pos, setPos] = useState(0);
-    const pokemonsList = _.chunk(game.pokemonData, 10);
+
+    const pokemonsList = _.chunk(useSelector((state: PokedexInitalState) => state.pokemons), 10);
+    // @ts-ignore
     let [items, setItems] = useState(pokemonsList[pos]?.map(pokemon => ({ label: pokemon.name, value: pokemon.id })));
-    
+
     const selectHandler = (item: any) => {
         render(<PokemonUI name={item.label} />)
     }

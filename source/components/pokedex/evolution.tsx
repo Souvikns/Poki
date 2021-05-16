@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Pokemon } from '../../lib';
+import { Pokemon } from '../../lib/types';
 import { Box, Text } from 'ink';
 
 const Evolution: FC<{ evolutions: Array<Pokemon>, name: string }> = ({ evolutions, name }) => {
