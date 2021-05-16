@@ -5,6 +5,8 @@ import { render } from 'ink';
 import Gradient from 'ink-gradient';
 import BigText from 'ink-big-text';
 import Err from './components/error';
+import { Pokedex as pokedex } from './lib';
+import { Provider } from 'react-redux';
 
 
 // importing components
@@ -28,7 +30,7 @@ program
     .description("A digital encyclopedia, which gives information about all pokemons")
     .option("-p, --pokemon <name>", "pass in pokemon name to search")
     .action((options) => {
-        render(<Pokedex flag={options} />)
+        render(<Provider store={pokedex().store}><Pokedex flag={options} /></Provider>)
     })
 
 

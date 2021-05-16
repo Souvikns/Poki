@@ -1,25 +1,26 @@
-export interface _Pokemon {
+export interface Pokemon {
     id: number,
     name: string,
-    type: Array<string>
-    evolution: {
-        base: string,
-        evolve: number
-    }
-    stat: {
-        hp: number,
-        attack: number,
-        defense: number,
-        special: number,
-        speed: number
-    }
+    type: string[],
+    baseStat: BaseStat
 }
 
-export interface CP {
-    15: number,
-    20: number,
-    30: number,
-    40: number
+export interface BaseStat {
+    hp: number,
+    attack: number,
+    defence: number,
+    specialAttack: number,
+    specialDefence: number,
+    speed: number
+}
+
+export interface PokedexPokemons extends Pokemon {
+    spriteImage: string,
+    evolution: Pokemon[]
+}
+
+export interface PokedexInitalState {
+    pokemons: PokedexPokemons[]
 }
 
 

@@ -1,6 +1,8 @@
 import React, { FC } from 'react';
 import { Box, Newline } from 'ink'
-import Game from '../../lib'
+import { useSelector } from 'react-redux';
+import { PokedexInitalState } from '../../lib/types';
+import _ from 'lodash';
 import BigText from 'ink-big-text';
 import Gradient from 'ink-gradient';
 
@@ -10,11 +12,9 @@ import Type from './type';
 import Evolution from './evolution';
 import Stat from './stat';
 
-let game = new Game();
-
 const PokemonUI: FC<{ name: string }> = ({ name }) => {
 
-    let pokemon = game.getPokemonStat(name);
+    let pokemon = _.find(useSelector((state: PokedexInitalState) => state.pokemons), pk => pk.name === name);
 
     if (typeof pokemon === "undefined") {
         return <Err pokemonName={name} />
@@ -39,7 +39,7 @@ const PokemonUI: FC<{ name: string }> = ({ name }) => {
 
             <Newline />
 
-            <Evolution evolutions={pokemon.evolutionList} name={pokemon.name} />
+            <Evolution evolutions={pokemon.evolution} name={pokemon.name} />
 
 
         </Box>

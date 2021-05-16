@@ -1,5 +1,11 @@
-import { Game } from './game';
-export * from './models';
-export * from './types';
+import { PokedexSlice } from './reducers/pokedex';
+import { configureStore } from '@reduxjs/toolkit';
 
-export default Game
+export const Pokedex = () => {
+    let store = configureStore({ reducer: PokedexSlice.reducer })
+    return {
+        store,
+        reducer: PokedexSlice.reducer,
+        actions: PokedexSlice.actions
+    }
+}
