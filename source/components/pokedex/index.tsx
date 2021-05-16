@@ -4,6 +4,8 @@ import _ from 'lodash';
 import SelectInput from 'ink-select-input';
 import { useSelector } from 'react-redux';
 import { PokedexInitalState } from '../../lib/types';
+import { Provider } from 'react-redux';
+import { Pokedex as pokedex } from '../../lib';
 
 // importing components
 import PokemonUI from './pokemon';
@@ -22,7 +24,7 @@ const Pokedex: FC<{ flag: any }> = ({ flag }) => {
     let [items, setItems] = useState(pokemonsList[pos]?.map(pokemon => ({ label: pokemon.name, value: pokemon.id })));
 
     const selectHandler = (item: any) => {
-        render(<PokemonUI name={item.label} />)
+        render(<Provider store={pokedex().store}><PokemonUI name={item.label} /></Provider>)
     }
 
     type Shift = "left" | "right"
