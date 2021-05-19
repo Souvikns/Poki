@@ -56,7 +56,7 @@ const Pokedex: FC<{ flag: any }> = ({ flag }) => {
         }
 
         if (input === "s") {
-            render(<Search />)
+            render(<Provider store={pokedex().store}><Search /></Provider>)
         }
     })
 
