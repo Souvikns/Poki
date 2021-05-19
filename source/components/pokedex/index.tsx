@@ -1,11 +1,9 @@
 import React, { FC, useState } from 'react';
-import { useInput, render } from 'ink'
+import { useInput } from 'ink';
 import _ from 'lodash';
 import SelectInput from 'ink-select-input';
 import { useSelector } from 'react-redux';
 import { PokedexInitalState } from '../../lib/types';
-import { Provider } from 'react-redux';
-import { Pokedex as pokedex } from '../../lib';
 
 // importing components
 import PokemonUI from './pokemon';
@@ -20,11 +18,16 @@ const Pokedex: FC<{ flag: any }> = ({ flag }) => {
     let [pos, setPos] = useState(0);
 
     const pokemonsList = _.chunk(useSelector((state: PokedexInitalState) => state.pokemons), 10);
-    // @ts-ignore
+
     let [items, setItems] = useState(pokemonsList[pos]?.map(pokemon => ({ label: pokemon.name, value: pokemon.id })));
 
+    let [selectedItem, setSelectedItem] = useState("");
+
+    let [search, setSearch] = useState(false);
+
     const selectHandler = (item: any) => {
-        render(<Provider store={pokedex().store}><PokemonUI name={item.label} /></Provider>)
+        setSelectedItem(item.label);
+        process.exit();
     }
 
     type Shift = "left" | "right"
@@ -56,11 +59,17 @@ const Pokedex: FC<{ flag: any }> = ({ flag }) => {
         }
 
         if (input === "s") {
-            render(<Search />)
+            setSearch(true);
         }
     })
 
+    if (search) {
+        return <Search />
+    }
 
+    if (selectedItem !== "") {
+        return <PokemonUI name={selectedItem} />
+    }
 
     return <>
         <SelectInput items={items} onSelect={selectHandler} itemComponent={SelectorItem} />
