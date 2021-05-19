@@ -1,11 +1,10 @@
 import React, { FC, useState } from 'react';
 import TextInput from 'ink-text-input';
-import { Box, Text, render } from 'ink'
+import { Box, Text } from 'ink'
 import { PokedexInitalState } from '../../lib/types';
-import { useSelector, Provider } from 'react-redux';
+import { useSelector } from 'react-redux';
 import _ from 'lodash';
 import SelectInput from 'ink-select-input';
-import { Pokedex } from '../../lib';
 
 // importing custom components
 import Pokemon from './pokemon';
@@ -17,6 +16,7 @@ const Search: FC<{}> = () => {
     var [query, setQuery] = useState('');
     const pokemons = useSelector((state: PokedexInitalState) => state.pokemons)
     var [pokemonList, setPokemonList] = useState(useSelector((state: PokedexInitalState) => state.pokemons));
+    const [selectItem, setSelectItem] = useState("");
 
     const onChange = (value: any) => {
         setQuery(value);
@@ -25,7 +25,12 @@ const Search: FC<{}> = () => {
     }
 
     const onSelect = (item: any) => {
-        render(<Provider store={Pokedex().store}><Pokemon name={item.label} /> </Provider>);
+        setSelectItem(item.label);
+        process.exit();
+    }
+
+    if (selectItem !== "") {
+        return <Pokemon name={selectItem} />
     }
 
     return <>
