@@ -1,0 +1,27 @@
+{
+  "name": "poki-core",
+  "version": "0.1.0",
+  "description": "The core game logic behind Poki",
+  "main": "lib/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Souvikns/poki.git"
+  },
+  "author": {
+    "name": "Souvik De",
+    "email": "souvikde.ns@gmail.com",
+    "url": "https://github.com/Souvikns"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Souvikns/poki/issues"
+  },
+  "homepage": "https://github.com/Souvikns/poki#readme",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.5.1",
+    "lodash": "^4.17.21"
+  }
+}

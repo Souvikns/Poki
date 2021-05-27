@@ -19,7 +19,8 @@
 		"pretest": "npm run build",
 		"test": "jest --coverage && codecov",
 		"test:watch": "jest --watch",
-		"prepublish": "npm run build"
+		"prepublish": "npm run build",
+		"publish": "lerna publish from-package --dist-tag next --contents dist"
 	},
 	"files": [
 		"dist",

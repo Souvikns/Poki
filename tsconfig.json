@@ -1,15 +1,36 @@
 {
-	"extends": "@sindresorhus/tsconfig",
 	"compilerOptions": {
-		"jsx": "react",
+		"module": "ESNext",
+		"target": "ES5",
+		"lib": [
+			"ES2020"
+		],
+		"jsx": "preserve",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
 		"esModuleInterop": true,
-		"outDir": "dist",
-		"declaration": true,
-		"strict": true
+		"baseUrl": "./",
+		"allowJs": true,
+		"paths": {
+			"poki-core": [
+				"./packages/core/lib"
+			],
+			"poki-core/*": [
+				"./packages/core/lib/*"
+			],
+			"poki-cli/": [
+				"./packages/cli/src"
+			],
+			"poki-cli/*": [
+				"./packages/cli/src/*"
+			],
+		},
+		"allowSyntheticDefaultImports": true,
+		"types": ["node", "react"]
 	},
-	"include": ["source"],
 	"exclude": [
+		"**/dist",
 		"node_modules",
-		"dist"
+		"**/.*/"
 	]
 }
