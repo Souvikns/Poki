@@ -2,7 +2,16 @@
     "extends": "../../tsconfig",
     "include": [
         "lib/**/*",
-        "test/**/*"
+        "test/**/*",
+        "lib/**/*.json"
     ],
+    "compilerOptions": {
+        "composite": true,
+        "outDir": "dist",
+        "rootDir": "./lib",
+        "declaration": true,
+        "noEmit": false,
+        "emitDeclarationOnly": true
+    },
     "exclude": []
 }
