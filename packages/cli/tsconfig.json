@@ -1,5 +1,11 @@
 {
     "extends": "../../tsconfig",
+    "compilerOptions": {
+        "composite": true,
+        "declaration": true,
+        "outDir": "dist",
+        "rootDir": "./src"
+    },
     "include": [
         "src/**/*",
         "test/**/*"
