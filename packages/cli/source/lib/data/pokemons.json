@@ -1,0 +1,104 @@
+[
+	{
+		"id": 1,
+		"name": "Bulbasaur",
+		"type": ["grass", "poison"],
+		"evolution": {
+			"base": "Bulbasaur",
+			"evolve": 0
+		},
+		"baseStat": {
+			"hp": 45,
+			"attack": 49,
+			"defence": 49,
+			"specialAttack": 65,
+			"specialDefence": 65,
+			"speed": 45
+		}
+	},
+	{
+		"id": 2,
+		"name": "Ivysaur",
+		"type": ["grass", "poison"],
+		"evolution": {
+			"base": "Bulbasaur",
+			"evolve": 1
+		},
+		"baseStat": {
+			"hp": 60,
+			"attack": 62,
+			"defence": 63,
+			"specialAttack": 80,
+			"specialDefence": 80,
+			"speed": 60
+		}
+	},
+	{
+		"id": 3,
+		"name": "Venusaur",
+		"type": ["grass", "poison"],
+		"evolution": {
+			"base": "Bulbasaur",
+			"evolve": 2
+		},
+		"baseStat": {
+			"hp": 80,
+			"attack": 82,
+			"defence": 83,
+			"specialAttack": 100,
+			"specialDefence": 100,
+			"speed": 80
+		}
+	},
+	{
+		"id": 4,
+		"name": "Charmander",
+		"type": ["fire"],
+		"evolution": {
+			"base": "Charmander",
+			"evolve": 0
+		},
+		"baseStat": {
+			"hp": 39,
+			"attack": 52,
+			"defence": 43,
+			"specialAttack": 60,
+			"specialDefence": 50,
+			"speed": 65
+		}
+	},
+	{
+		"id": 5,
+		"name": "Charmeleon",
+		"type": ["fire"],
+		"evolution": {
+			"base": "Charmander",
+			"evolve": 1
+		},
+		"baseStat": {
+			"hp": 58,
+			"attack": 64,
+			"defence": 58,
+			"specialAttack": 80,
+			"specialDefence": 65,
+			"speed": 80
+		}
+	},
+	{
+		"id": 6,
+		"name": "Charizard",
+		"type": ["fire", "flying"],
+		"evolution": {
+			"base": "Charmander",
+			"evolve": 2
+		},
+		"baseStat": {
+			"hp": 78,
+			"attack": 84,
+			"defence": 78,
+			"specialAttack": 109,
+			"specialDefence": 85,
+			"speed": 100
+		}
+	}
+]
