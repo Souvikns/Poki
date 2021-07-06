@@ -1,0 +1,29 @@
+{
+  "name": "poki",
+  "version": "0.0.1",
+  "description": "Poki is an online multiplayer pokemon turn based game on your CLI. ",
+  "keywords": [
+    "pokemon"
+  ],
+  "author": "Souvik <souvikde.ns@gmail.com>",
+  "homepage": "https://github.com/Souvikns/Poki#readme",
+  "license": "MIT",
+  "main": "lib/poki.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Souvikns/Poki.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Souvikns/Poki/issues"
+  }
+}
