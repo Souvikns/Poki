@@ -1,3 +1,6 @@
 node_modules
 dist
 lerna-debug.log
+.deta
+.env
+packages/api/server.js
