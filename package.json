@@ -5,6 +5,7 @@
     "lerna": "^4.0.0"
   },
   "scripts": {
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "bootstrap": "lerna bootstrap --hoist"
   }
 }
