@@ -14,3 +14,10 @@
 
 # Poki
 A fun multiplayer Pokémon turn based cli game.
+
+---
+> Under Development
+---
+
+## Main Idea 
+This is basically a turn based pokemon game that will run on your CLI. Not only will this game allow you to catch and battle offline but also let users connect to online game server to battle with other players over the internet. 
